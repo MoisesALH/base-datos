@@ -1,4 +1,13 @@
+<div align="justify">
+
 # Base de Datos
-Repositorio dedicado a la asignatura de BBDD
-## Descripción
-texto
+## Descripción.
+
+Repositorio dedicado a la asignatura de BBDD.
+
+## Contenidos.
+
+ - [Diagrama ER](ER/README.md)
+
+
+</div>
