@@ -9,7 +9,7 @@ Representa las entidades, relaciones y cardinalidades mínimas y máximas para c
 
 - En un comercio, un cliente compra varios productos, y un producto puede ser comprado por varios clientes.
 
- Representa la relación entre Personas y sus padres.
+ - Representa la relación entre Personas y sus padres.
 
 - En una carrera de relevos, representar la relación dar el relevo entre atletas(para calcular las cardinalidades máxima y mínima deberás tener en cuenta si se trata de el primero, el último o el 2º o 3º)
 
