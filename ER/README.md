@@ -82,7 +82,7 @@ Cuando una entidad está relacionada consigo misma, hablamos de relación reflex
 __Aunque el modelo E-R permite relaciones de cualquier grado, la mayoría de las aplicaciones del modelo sólo consideran relaciones del grado 2.__
 
 
- ### El Papel o Rol de una entidad en una relación
+### El Papel o Rol de una entidad en una relación
 
 Es la función que tiene en una relación. Se especifican los papeles o roles cuando se quiera aclarar el significado de una entidad en una relación. A continuación mostramos los mismos ejemplos del punto anterior pero incluyendo el papel o rol de cada entidad en las relaciones:
 
@@ -164,7 +164,7 @@ Se produce cuando una entidad débil necesita de la presencia de una fuerte para
 </div>
 </br>
 
- ###### Explicación
+###### Explicación
  En la figura se muestra el caso de que __un empleado puede tener ninguno, uno o varios hijos__, por lo que los datos de los hijos deben sacarse en una entidad aparte, aunque __siguen siendo datos propios de un empleado__. _Si se eliminase un registro de un empleado, no tendría sentido seguir manteniendo en la base datos la información sobre sus hijos_.
 
 ##### Dependencia en identificación.
