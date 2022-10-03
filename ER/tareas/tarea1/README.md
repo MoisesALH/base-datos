@@ -62,6 +62,15 @@ Representa las entidades, relaciones y cardinalidades mínimas y máximas para c
   </br>
 </details>
 
+  - _Solución b_.
+
+    <details>
+          <summary>PULSA PARA VER LA SOLUCIÓN</summary>
+      </br>
+      <img src="img/Ej-6-b.png">
+      </br>
+    </details>
+
 - Se desea construir una bd para mantener información sobre los equipos y partidos de la liga. - Un equipo tiene un cierto nº de jugadores (Id_jugador, datos personales) y no todos participan en cada partido. Queremos registrar además por cada partido, qué jugadores juegan, la fecha y la hora del partido, resultados de los encuentros y las posiciones donde juegan.
 
   <details>
