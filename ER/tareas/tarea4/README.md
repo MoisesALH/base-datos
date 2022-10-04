@@ -24,7 +24,9 @@ Se solicita:
 
   __Paso 1__:    
   </br>
+  <!--
   <img src="img/articulos-camiones.drawio.png">
+  -->
   </br>
 
   __Paso 2__:
