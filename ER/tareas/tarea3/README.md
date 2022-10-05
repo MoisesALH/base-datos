@@ -31,8 +31,16 @@ _Se pide hacer el diagrama ER para la base de datos que represente esta informac
   <img src="img/articulos-encargo.drawio.png">
   </br>
 
-  __Paso 2__:
+  __Solución 1__:
   
+  </br>
+  <img src="img/articulos-encargo-solucion-1.drawio.png">
+  </br>
+  
+  __Solución 2__:
+  
+  </br>
+  <img src="img/articulos-encargo-solucion-2.drawio.png">
   </br>
   
 </details>
