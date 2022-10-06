@@ -7,3 +7,4 @@
 - [Tarea 4.](tarea4/README.md)
 - [Tarea 5.](tarea5/README.md)
 - [Tarea 6.](tarea6/README.md)
+- [Tarea 7.](tarea7/README.md)
