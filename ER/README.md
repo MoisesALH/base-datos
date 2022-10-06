@@ -198,7 +198,7 @@ __Ejemplo__: Un empleado puede estar en una empresa, o bien realizando práctica
 </div>
 </br>
 
-Restricción de inclusividad entre dos tipos de relaciones R1 y R2 respecto a la entidad E1. Para que la entidad E1 participe en la relación R2 debe participar previamente en la relación R1.
+__Restricción de inclusividad entre dos tipos de relaciones R1 y R2 respecto a la entidad E1__. Para que la entidad E1 participe en la relación R2 debe participar previamente en la relación R1.
 
 <div align="center">
 <img src="img/tema2-027.webp" width="500px"/>
@@ -220,11 +220,6 @@ __Restricción de exclusión entre dos tipos de relaciones R1 y R2__. Significa 
 </br>
 
 __Ejemplo__: Los empleados, en función de sus capacidades, o son diseñadores de productos o son operarios y los fabrican, no es posible que ningún empleado sea diseñador y fabricante a la misma vez.
-
-<div align="center">
-<img src="img/tema2-035.webp" width="500px"/>
-</div>
-</br>
 
 <div align="center">
 <img src="img/tema2-035.webp" width="500px"/>
