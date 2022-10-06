@@ -180,4 +180,69 @@ __Se produce cuando una entidad débil necesita de la fuerte para identificarse_
 
 En la figura se observa que la provincia tiene uno o varios municipio y que un municipio pertenece a una sola provincia. Ahora bien si lo que identifica a los municipios es el código que aparece en el código postal, se tiene que las dos primeras cifras corresponden al código de la provincia y las tres últimas al del municipio. Por ejemplo, el C.P de Écija es 41400, dónde 41 es el código de la provincia y 400 el del municipio. De esta forma, habrá distintos municipios con código 400 en distintas provincias. Uno de estos municipios se distinguirá del resto al anteponerle las dos primeras cifras correspondientes al código de la provincial.
 
+#### Símbolos de exclusividad o inclusividad entre relaciones
+
+___Otros símbolos usados en el modelo E/R son los siguientes:___
+
+__Restricción de exclusividad__ entre dos tipos de relaciones R1 y R2 respecto a la entidad E1. _Significa que_ __E1__ está relacionada, o bien con_ __E2__ o bien con __E3__, pero __NO PUEDENDARSE EN AMBAS RELACIONES DE FORMA SIMULTÁNEA__.
+
+<div align="center">
+<img src="img/tema2-025.webp" width="500px"/>
+</div>
+</br>
+
+__Ejemplo__: Un empleado puede estar en una empresa, o bien realizando prácticas, en cuyo caso está asignado a un grupo de prácticas y no pertenece a ningún departamento en concreto. O bien puede ser empleado en plantilla y en este caso pertenece a un departamento.
+
+<div align="center">
+<img src="img/tema2-031.webp" width="500px"/>
+</div>
+</br>
+
+Restricción de inclusividad entre dos tipos de relaciones R1 y R2 respecto a la entidad E1. Para que la entidad E1 participe en la relación R2 debe participar previamente en la relación R1.
+
+<div align="center">
+<img src="img/tema2-027.webp" width="500px"/>
+</div>
+</br>
+
+__Ejemplo__: Para que un empleado pueda trabajar como diseñador de productos debe haber asistido, al menos, a dos cursos.
+
+<div align="center">
+<img src="img/tema2-029.webp" width="500px"/>
+</div>
+</br>
+
+__Restricción de exclusión entre dos tipos de relaciones R1 y R2__. Significa que E1 está relacionada con E2 bien mediante R1, o bien mediante R2 pero que no pueden darse ambas relaciones simultáneamente.
+
+<div align="center">
+<img src="img/tema2-033.webp" width="500px"/>
+</div>
+</br>
+
+__Ejemplo__: Los empleados, en función de sus capacidades, o son diseñadores de productos o son operarios y los fabrican, no es posible que ningún empleado sea diseñador y fabricante a la misma vez.
+
+<div align="center">
+<img src="img/tema2-035.webp" width="500px"/>
+</div>
+</br>
+
+<div align="center">
+<img src="img/tema2-035.webp" width="500px"/>
+</div>
+</br>
+
+__Restricción de inclusión entre dos tipos de relaciones R1 y R2__. Para que la entidad E1 participe en la relación R2 con E2 debe participar previamente en la relación R1.
+
+<div align="center">
+<img src="img/tema2-039.webp" width="500px"/>
+</div>
+</br>
+
+__Ejemplo__: Para que un hombre se divorcie de una mujer, previamente ha de haberse casado con ella.
+
+<div align="center">
+<img src="img/tema2-037.webp" width="500px"/>
+</div>
+</br>
+
 </div>
