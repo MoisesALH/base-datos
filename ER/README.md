@@ -240,4 +240,86 @@ __Ejemplo__: Para que un hombre se divorcie de una mujer, previamente ha de habe
 </div>
 </br>
 
+## MODELO E/R EXTENDIDO
+
+El modelo __Entidad/Relación extendido__ incluye todo lo visto en el modelo Entidad/Relación pero además las __Relaciones de Jerarquía__.
+
+_Una relación de jerarquía se produce cuando una entidad se puede relacionar con otras a través de una relación cuyo rol_ sería __«Es un tipo de»__.
+
+__Por ejemplo__, imaginemos la siguiente situación.
+
+Queremos hacer una __BD__ sobre los animales de un Zoo. Tenemos las entidades __ANIMAL, FELINO, AVE, REPTIL, INSECTO. FELINO, AVE, REPTIL e INSECTO__ tendrían el mismo __tipo de__ relación con __ANIMAL: «son un tipo de»__. _Ahora bien, su representación mediante el E/R clásico sería bastante engorrosa_:
+
+<div align="center">
+<img src="img/tema2-041.webp" width="500px"/>
+</div>
+</br>
+
+Para evitar tener que repetir tantas veces el rombo de la misma relación, ___se utilizan unos símbolos especiales para estos casos y se sustituyen todos los rombos___ de relación ___«es un tipo de»___ por un ___triángulo invertido,___ donde _las entidades de abajo son siempre un tipo de la entidad de arriba y se llaman subtipo e entidades hijas_. La de arriba se denominará supertipo o ___entidad padre___. Las relaciones jerárquicas siempre se hacen en función de un atributo que se coloca al lado de la relación «es_un». En la figura siguiente sería «tipo». El ejemplo anterior quedaría del modo siguiente utilizando símbolos del E/R extendido.
+
+<div align="center">
+<img src="img/tema2-042.webp" width="500px"/>
+</div>
+</br>
+
+### Relaciones de Jerarquía
+
+Vamos a ver los distintos tipos de relaciones de jerarquía existentes:
+
+#### Total: 
+Subdividimos la entidad __Empleado__ en: __Ingeniero, Secretario y Técnico__ y en nuestra __BD NO hay ningún otro empleado que no pertenezca a uno de estos tres tipos__.
+
+#### Parcial: 
+
+Subdividimos la __entidad Empleado en: Ingeniero, Secretario y Técnico__ pero en nuestra __BD puede haber empleados que no pertenezcan a ninguno de estos tres tipos__.
+
+#### Solapada: 
+
+Subdividimos la entidad ___Empleado, en: Ingeniero, Secretario y Técnico___ y en nuestra __BD puede haber empleados que sean a la vez Ingenieros y Secretarios, o Secretarios y Técnicos, etc__.
+
+#### Exclusiva: 
+
+Subdividimos la entidad ___Empleado en: Ingeniero, Secretario y Técnico___. En nuestra __BD ningún empleado pertenece a más de una subentidad__.
+
+<div align="center">
+<img src="img/tema2-043.webp" width="500px"/>
+</div>
+</br>
+
+#### Ejemplos:
+
+##### Jerarquía solapada y parcial
+
+<div align="center">
+<img src="img/tema2-044.webp" width="500px"/>
+</div>
+</br>
+En esta BD un empleado podría ser simultáneamente técnico, científico y astronauta o técnico y astronauta, etc. (solapada). Además puede ser técnico, astronauta, científico o desempeñar otro empleo diferente (parcial).
+
+#### Jerarquía solapada y total
+
+<div align="center">
+<img src="img/tema2-045.webp" width="500px"/>
+</div>
+</br>
+
+En esta BD un empleado podría ser simultáneamente técnico, científico y astronauta o técnico y astronauta, etc. (solapada). Además puede ser solamente técnico, astronauta o científico (total).
+
+#### Jerarquía exclusiva y parcial
+
+<div align="center">
+<img src="img/tema2-046.webp" width="500px"/>
+</div>
+</br>
+
+En esta BD un empleado sólo puede desempeñar una de las tres ocupaciones (exclusiva) . Además puede ser técnico, o ser astronauta, o ser científico o también desempeñar otro empleo diferente, por ejemplo, podría ser FÍSICO (parcial).
+
+#### Jerarquía exclusiva y total
+
+<img src="img/tema2-047.webp" width="500px"/>
+</div>
+</br>
+
+Un empleado puede ser solamente técnico, astronauta o científico (total) y no ocupar más de un puesto (exclusiva).
+
 </div>
