@@ -20,19 +20,42 @@ Se solicita:
 6. Indica la cardinalidad de las relaciones.
 
 <details>
-      <summary>PULSA PARA VER LA SOLUCIÓN</summary>
-
-  __Paso 1__:    
-  </br>
-  <!--
-  <img src="img/articulos-camiones.drawio.png">
-  -->
-  </br>
-
-  __Paso 2__:
-  
+      <summary>PASO 1 - PULSA PARA VER RESPUESTA</summary>   
   </br>
   
+  <img src="img/camioneros.drawio.png">
+
+  </br>
+
+</details>
+
+<details>
+      <summary>PASO 2 - PULSA PARA VER RESPUESTA</summary>   
+  </br>
+  
+  <img src="img/camioneros-paso-2.drawio.png">
+
+  </br>
+
+</details>
+
+
+<details>
+      <summary>PASO 3 - PULSA PARA VER RESULTADO</summary>   
+  </br>
+  
+  <img src="img/camioneros-paso-3.drawio.png">
+  </br>
+
+__Explicación__:
+  “Un camionero distribuye muchos paquetes, y un paquete sólo puede ser distribuido por un camionero”. Por lo que será:
+  - Camionero – Paquete __(1,N)__
+  - Paquete – Camionero __(0,1)__, si entendemos que puede haber paquetes no distribuidos. Si no realizamos esta consideración la cardinalidad sería __(1:1)__
+  
+  La participación en la relación “conduce” viene definida en la frase “Un camionero puede conducir diferentes camiones en fechas diferentes, y un camión puede ser conducido por varios camioneros”. Por lo que será:
+  - Camionero – Camión __(1,N)__
+  - Camión – Camionero __(1,N)__
+  Por lo tanto la cardinalidad de la relación “conduce” es __N:M__ (las dos máximas).
 </details>
 
 </div>
