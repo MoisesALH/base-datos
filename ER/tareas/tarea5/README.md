@@ -19,19 +19,64 @@ Se pide:
 6. Indica la cardinalidad de las relaciones.
 
 <details>
-      <summary>PULSA PARA VER LA SOLUCIÓN</summary>
-
-  __Paso 1__:    
-  </br>
-  <!--
-  <img src="img/.drawio.png">
-  -->
-  </br>
-
-  __Paso 2__:
-  
+      <summary>PASO 1 - PULSA PARA VER RESULTADO</summary>   
   </br>
   
+  <img src="img/profesorado.drawio.png">
+  
+  </br>
+
+</details>
+
+<details>
+      <summary>PASO 2 - PULSA PARA VER RESULTADO</summary>   
+  </br>
+  
+  <img src="img/profesorado-paso-2.drawio.png">
+  
+  </br>
+
+</details>
+
+<details>
+      <summary>PASO 3 - PULSA PARA VER RESULTADO</summary>   
+  </br>
+  
+  <img src="img/profesorado-paso-4.drawio.png">
+  
+  </br>
+
+ También se puede deducir que __Alumno pertenece a grupo__. Pero en este caso no podemos asignar ningún atributo a la posible entidad Grupo. Por lo que de momento la desechamos. Entendemos que podemos agrupar a los alumnos que tienen al mismo delegado.
+
+  - La participación en la relación __“imparte”__ viene definida en la frase “Los profesores pueden impartir varios módulos, pero un módulo sólo puede ser impartido por un profesor”. Por lo que será:
+    - Profesor – Módulo (1,n)
+    - Módulo – Profesor (1,1)
+   Por lo tanto la cardinalidad de la relación “imparte” es 1:N (las dos máximas).
+ - La participación en la relación __“cursa”__ viene definida en la frase “Cada alumno está matriculado en uno o varios módulos”. Por lo que será:
+   - Alumno – Módulo (1,n)
+   - Módulo – Alumno (1,n)
+   Por lo tanto la cardinalidad de la relación “cursa” es N:M (las dos máximas).
+ - La participación en la relación __“delegado_de”__ viene definida en la frase “Cada curso tiene un grupo de alumnos, uno de los cuales es el delegado del grupo”. Por lo que será:
+   - Alumno(Delegado) – Alumno (1,n)
+   - Alumno – Alumno(Delegado) (1,1)
+   Por lo tanto la cardinalidad de la relación “delegado_de” es 1:N (las dos máximas).
+  
+  </br>
+
+</details>
+
+<details>
+      <summary>SOLUCIÓN (OPCIONAL) - PULSA PARA VER RESULTADO</summary>   
+  </br>
+  
+  <img src="img/profesorado-paso-4.drawio.png">
+  
+ La participación en la relación __“pertenece a”__ viene definida en la frase “Cada curso tiene un grupo de alumnos”. Por lo que será: 
+  - Alumno – Grupo (1,1) suponemos que los alumnos perteneces a un único grupo o Grupo – Alumno (1,n).
+  Por lo tanto la cardinalidad de la relación “pertenece a” es 1:N (las dos máximas).
+
+  </br>
+
 </details>
 
 </div>
