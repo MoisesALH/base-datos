@@ -42,7 +42,7 @@ Se pide:
       <summary>PASO 3 - PULSA PARA VER RESULTADO</summary>   
   </br>
   
-  <img src="img/profesorado-paso-4.drawio.png">
+  <img src="img/profesorado-paso-3.drawio.png">
   
   </br>
 
@@ -69,7 +69,7 @@ Se pide:
       <summary>SOLUCIÓN (OPCIONAL) - PULSA PARA VER RESULTADO</summary>   
   </br>
   
-  <img src="img/profesorado-paso-4.drawio.png">
+  <img src="img/profesorado-solucion-b.drawio.png">
   
  La participación en la relación __“pertenece a”__ viene definida en la frase “Cada curso tiene un grupo de alumnos”. Por lo que será: 
   - Alumno – Grupo (1,1) suponemos que los alumnos perteneces a un único grupo o Grupo – Alumno (1,n).
