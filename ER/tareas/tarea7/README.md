@@ -1,6 +1,6 @@
 <div align="justify">
 
-# Sistema Empresa Tecnologóa
+# Sistema Empresa Tecnológica
 
 <div align="center">
 <img src="img/empleados.png" width="400px"/>
