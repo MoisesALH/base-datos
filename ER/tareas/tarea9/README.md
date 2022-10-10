@@ -31,7 +31,7 @@ Se pide:
 <details>
       <summary>PASO 1 :PULSA PARA VER LA SOLUCIÓN</summary>
   </br>
-  <img src="img/aula.drawio.png">
+  <img src="img/ajedrez.drawio.png">
   </br>
    </br>
 </details>
@@ -39,7 +39,7 @@ Se pide:
 <details>
       <summary>PASO 2 :PULSA PARA VER LA SOLUCIÓN</summary>
   </br>
-  <img src="img/aula-paso-2.drawio.png">
+  <img src="img/ajedrez.drawio.png">
   </br>
    </br>
   
