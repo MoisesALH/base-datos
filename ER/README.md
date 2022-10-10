@@ -282,7 +282,7 @@ Subdividimos la entidad ___Empleado, en: Ingeniero, Secretario y Técnico___ y e
 Subdividimos la entidad ___Empleado en: Ingeniero, Secretario y Técnico___. En nuestra __BD ningún empleado pertenece a más de una subentidad__.
 
 <div align="center">
-<img src="img/tema2-043.webp" width="250px"/>
+<img src="img/tema2-043.webp" width="300px"/>
 </div>
 </br>
 
@@ -291,7 +291,7 @@ Subdividimos la entidad ___Empleado en: Ingeniero, Secretario y Técnico___. En 
 ##### Jerarquía solapada y parcial
 
 <div align="center">
-<img src="img/tema2-044.webp" width="250px"/>
+<img src="img/tema2-044.webp" width="300px"/>
 </div>
 </br>
 En esta BD un empleado podría ser simultáneamente técnico, científico y astronauta o técnico y astronauta, etc. (solapada). Además puede ser técnico, astronauta, científico o desempeñar otro empleo diferente (parcial).
@@ -299,7 +299,7 @@ En esta BD un empleado podría ser simultáneamente técnico, científico y astr
 #### Jerarquía solapada y total
 
 <div align="center">
-<img src="img/tema2-045.webp" width="250px"/>
+<img src="img/tema2-045.webp" width="300px"/>
 </div>
 </br>
 
@@ -308,7 +308,7 @@ En esta BD un empleado podría ser simultáneamente técnico, científico y astr
 #### Jerarquía exclusiva y parcial
 
 <div align="center">
-<img src="img/tema2-046.webp" width="250px"/>
+<img src="img/tema2-046.webp" width="300px"/>
 </div>
 </br>
 
@@ -316,10 +316,14 @@ En esta BD un empleado sólo puede desempeñar una de las tres ocupaciones (excl
 
 #### Jerarquía exclusiva y total
 
-<img src="img/tema2-047.webp" width="250px"/>
+<img src="img/tema2-047.webp" width="300px"/>
 </div>
 </br>
 
 Un empleado puede ser solamente técnico, astronauta o científico (total) y no ocupar más de un puesto (exclusiva).
+
+<img src="img/tipos-jerarquias.png" width="350px"/>
+</div>
+</br>
 
 </div>
