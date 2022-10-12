@@ -1,10 +1,20 @@
 <div align="justify">
 
-# Título
+# AGENCIA MATRIMONIAL
 
 <div align="center">
-<img src="img/.png" width="400px"/>
+<img src="img/agencia.png" width="400px"/>
 </div>
+
+Se desea diseñar una base de datos para una __AGENCIA MATRIMONIAL__ que contenga información de __HOMBRES__ (Con todos sus datos personales), __MUJERES__ (Con todos sus datos
+personales), __EMPLEADOS__ (Divididos en tres categorías __SOCIOS, DIRECTORES y ADMINISTRATIVOS__), CITAS REALIZADAS (Debe quedar constancia de la fecha, el hombre, la mujer y el director que la promovió) y MATRIMONIOS (Fecha, Hombre, Mujer). Teniendo en cuenta las siguientes restricciones:
+- Un HOMBRE puede tener citas con varias MUJERES.
+- Una MUJER puede tener citas con varios HOMBRES.
+- Un HOMBRE puede casarse con varias MUJERES. (Puede enviudar).
+- Una MUJER puede casarse con varios HOMBRES. (Puede enviudar)
+- Sólo los DIRECTORES pueden promover citas.
+- Un SOCIO tiene a su cargo varios DIRECTORES y éstos a su vez varios
+ADMINISTRATIVOS.
 
 Se pide:
   1. Identifica las posibles __entidades y las relaciones__.
