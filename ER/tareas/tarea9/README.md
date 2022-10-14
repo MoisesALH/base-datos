@@ -39,7 +39,7 @@ Se pide:
 <details>
       <summary>PASO 2 :PULSA PARA VER LA SOLUCIÓN</summary>
   </br>
-  <img src="img/ajedrez.drawio.png">
+  <img src="img/ajedrez-paso-2.drawio.png">
   </br>
    </br>
   
