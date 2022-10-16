@@ -3,7 +3,7 @@
 # VideoClub
 
 <div align="center">
-<img src="img/.png" width="400px"/>
+<img src="img/videoclub.png" width="400px"/>
 </div>
 
 Crea un diseño entidad relación (estando prohibido utilizar símbolos del modelo extendido) que permita gestionar los datos de un videoclub de modo que:
