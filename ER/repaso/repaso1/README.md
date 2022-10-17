@@ -20,13 +20,13 @@ Se pide:
   4. Monta correctamente todas las entidades y sus relaciones.
   5. Colocar los atributos a cada entidad e interrelación.
   6. Indica la cardinalidad de las relaciones.
-<!--
+
 <details>
-      <summary>PASO 1 - PULSA PARA VER RESULTADO</summary>   
+      <summary>VER SOLUCIÓN</summary>   
   </br>
   
-  <img src="img/.drawio.png">
-  -->
+  <img src="img/biclioteca.drawio.png">
+  
   </br>
 
 </details>
