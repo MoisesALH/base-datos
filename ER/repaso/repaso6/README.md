@@ -22,13 +22,24 @@ Se pide:
   6. Indica la cardinalidad de las relaciones.
 
 <details>
-      <summary>PASO 1 - PULSA PARA VER RESULTADO</summary>   
+      <summary>SOLUCIÓN 1 - PULSA PARA VER RESULTADO</summary>   
   </br>
   
-  <img src="img/.drawio.png">
+  <img src="img/videoclub.drawio.png">
   
   </br>
 
 </details>
+
+<details>
+      <summary>SOLUCIÓN 2 - PULSA PARA VER RESULTADO</summary>   
+  </br>
+  
+  <img src="img/videoclub-solucion-2.drawio.png">
+  
+  </br>
+
+</details>
+
 
 </div>

@@ -31,4 +31,26 @@ Se pide:
 
 </details>
 
+<details>
+      <summary>VER SOLUCIÓN EXTENDIDA 1</summary>   
+  </br>
+  
+  <img src="img/biclioteca-extendida.drawio.png">
+  
+  </br>
+
+</details>
+
+
+<details>
+      <summary>VER SOLUCIÓN EXTENDIDA 2</summary>   
+  </br>
+  
+  <img src="img/biclioteca-extendida-2.drawio.png">
+  
+  </br>
+
+</details>
+
+
 </div>
