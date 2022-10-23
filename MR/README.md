@@ -27,10 +27,11 @@ D.N.I. | Nombre | Apellido | Nacimiento | Sexo | Estado civil
 52.768.987 | Juan | Loza | 15/06/1976 | H | Soltero
 06.876.983 | Isabel | Gálvez | 23/12/1969 | M | Casada
 34.678.987 | Micaela | Ruiz | 02/10/1985 | M | Soltera
+
 En realidad, siendo rigurosos, una __RELACIÓN__ del __MODELO RELACIONAL__ _es sólo la definición de la estructura de la tabla_, es decir su __nombre y la lista de los atributos que la componen_. Una representación de la definición de esa relación podría ser la siguiente:
 
 <div align="center">
-<img src="img/tema2-048.webp" width="300px"/>
+<img src="img/tema2-048.webp" width="250px"/>
 </div>
 
 Para distinguir un registro de otro, se usa la __«clave primaria o clave principal»__.
@@ -55,7 +56,7 @@ Las relaciones tienen las siguientes propiedades:
 - __Clave Alternativa__: Toda clave candidata que no es clave primaria (las que no hayamos elegido como clave principal).
 - ___Una clave principal no puede asumir el valor nulo (Integridad de la entidad).___
 - __Dominio de un atributo (Valores de Dominio)__: Conjunto de valores que pueden ser asumidos por dicho atributo.
-- __Clave Externa o foránea o ajena__: el atributo o conjunto de atributos que forman la clave principal de otra relación. Que un atributo sea clave ajena en una tabla significa que para introducir datos en ese atributo, previamente han debido introducirse en la tabla de origen. ___Es decir, los valores presentes en la clave externa tienen que corresponder a valores presentes en la clave principal correspondiente (Integridad Referencial)__.
+- __Clave Externa o foránea o ajena__: el atributo o conjunto de atributos que forman la clave principal de otra relación. Que un atributo sea clave ajena en una tabla significa que para introducir datos en ese atributo, previamente han debido introducirse en la tabla de origen. __Es decir, los valores presentes en la clave externa tienen que corresponder a valores presentes en la clave principal correspondiente (Integridad Referencial)__.
 ## Transformación de un esquema E/R a esquema relacional
 Pasamos ya a enumerar las normas para traducir del Modelo E/R al modelo relacional, ayudándonos del siguiente ejemplo:
 
@@ -71,7 +72,9 @@ Al pasar del esquema E/R al esquema Relacional deberemos añadir las claves for�
 ### Entidades
 Cada entidad se transforma en una tabla. El identificador (o identificadores) de la entidad pasa a ser la clave principal de la relación y aparece subrayada o con la indicación: __PK (Primary Key)__. Si hay clave alternativa esta se pone en __«negrita»__.
 
-Ejemplo: Todas las entidades del ejemplo anterior generan tabla. En concreto, la entidad AULA genera la siguiente tabla:
+#### Ejemplo
+
+Todas las entidades del ejemplo anterior generan tabla. En concreto, la entidad AULA genera la siguiente tabla:
 
 <div align="center">
 <img src="img/tema2-050.webp" width="300px"/>
@@ -116,6 +119,7 @@ Por lo general no generan tabla. Se dan 3 casos:
 #### Caso 1
 Si las dos entidades participan con participación __(0,1)__, entonces se crea una nueva tabla para la relación.
 ##### Ejemplo
+
 No se presenta ninguna situación así en el esquema estudiado. Una situación donde puede darse este caso es en HOMBRE __(0,1)__ se casa con MUJER __(0,1)__. _Es similar al caso 1_ del apartado anterior en relaciones __1:N__, aunque en este caso debemos establecer una restricción de valor único para FK2.
 
 <div align="center">
@@ -150,6 +154,7 @@ Relaciones de dependencia en existencia: Se comportan como una __1:N normal__. _
 No encontramos ningún ejemplo, reseñado como tal, en el supuesto anterior. Ahora bien, se comportan en el paso a tablas como cualquier otra relación 1:N. Sólo se tendría en cuenta, el hecho de ser débil en existencia para en el momento de creación de la BD, imponer que al borrar una ocurrencia en el lado «1», se borren las asociadas en el lado «n».
 
 ### Relaciones de dependencia en identificación
+
 Por lo general no generan tablas, porque __suelen ser 1:1 o 1:N__. Como en toda relación 1:N, La clave de la entidad fuerte debe introducirse en la tabla de la entidad débil como foránea y, además en este caso, formar parte de la clave de ésta. En las entidades débiles, la clave de la entidad fuerte debe ir la primera y, a continuación, los discriminadores de la débil.
 #### Ejemplo
 Realicemos el paso a tablas de la relación débil en identificación entre CURSO Y GRUPO.
@@ -159,12 +164,14 @@ Realicemos el paso a tablas de la relación débil en identificación entre CURS
 </div>
 
 ### Relaciones de grado mayor que 2(solo veremos hasta grado 3)
-Siempre generan tabla. Las claves principales de las entidades que participan en la relación pasan a la nueva tabla como claves foráneas. Y solo las de los lados «n» forman la principal. Si hay atributos propios de la relación, estos se incluyen en esa tabla. #### Ejemplo
+Siempre generan tabla. Las claves principales de las entidades que participan en la relación pasan a la nueva tabla como claves foráneas. Y solo las de los lados «n» forman la principal. Si hay atributos propios de la relación, estos se incluyen en esa tabla.
+#### Ejemplo
+
 No encontramos ningún ejemplo de relación de más de grado 2 en el supuesto anterior. Se verán cuando aparezcan en algún ejercicio.
 
-###Relaciones reflexivas
-Relaciones Reflexivas o Recursivas
-Generan tabla o no en función de la cardinalidad. Si es __1:1__, _no genera tabla_. En la entidad se introduce dos veces la clave, una como clave principal y otra como clave ajena. Se suele introducir una modificación en el nombre por diferenciarlas. Si es __1:N__, se puede generar tabla o no. Si hubiese participación 0 en el lado 1, obligatoriamente se generaría tabla. Si es N:N, la relación genera tabla.
+### Relaciones reflexivas
+Relaciones __reflexivas o recursivas__
+generan tabla o no en función de la cardinalidad. Si es __1:1__, _no genera tabla_. En la entidad se introduce dos veces la clave, una como clave principal y otra como clave ajena. Se suele introducir una modificación en el nombre por diferenciarlas. Si es __1:N__, se puede generar tabla o no. Si hubiese participación 0 en el lado 1, obligatoriamente se generaría tabla. Si es N:N, la relación genera tabla.
 
 #### Ejemplo
 Realicemos el paso a tablas de la relación reflexiva de ALUMNO. Como no tiene participación mínima __«0»__ en el lado __1___, no genera tabla. La clave principal de ALUMNOS, volverá a aparecer en ALUMNOS como clave foránea, igual que en cualquier relación 1:N. Ahora bien, como no puede haber dos campos con el mismo nombre en la misma tabla, deberemos cambiar un poco el nombre de la clave principal, para que haga referencia al papel que ocupa como clave foránea.
