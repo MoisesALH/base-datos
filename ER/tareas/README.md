@@ -11,14 +11,5 @@
 - [Tarea 8.](tarea8/README.md)
 - [Tarea 9.](tarea9/README.md)
 - [Tarea 10.](tarea10/README.md)
-
-## Lista de tareas de repaso a realizar:
-- [Repaso 1.](repaso1/README.md)
-- [Repaso 2.](repaso2/README.md)
-- [Repaso 3.](repaso3/README.md)
-- [Repaso 4.](repaso4/README.md)
-- [Repaso 5.](repaso5/README.md)
-- [Repaso 6.](repaso6/README.md)
-- [Repaso 7.](repaso7/README.md)
-- [Repaso 8.](repaso8/README.md)
-- [Repaso 9.](repaso9/README.md)
+- [Tarea 11.](tarea11/README.md)
+- [Tarea 12.](tarea12/README.md)
