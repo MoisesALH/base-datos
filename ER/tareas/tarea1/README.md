@@ -1,3 +1,5 @@
+<div align="justify">
+
 # Ejercicios básicos de E/R
 ## Descripción:
 Representa las entidades, relaciones y cardinalidades mínimas y máximas para cada uno de los siguientes supuestos:
