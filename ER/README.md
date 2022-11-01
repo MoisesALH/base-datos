@@ -326,4 +326,26 @@ Un empleado puede ser solamente técnico, astronauta o científico (total) y no 
 </div>
 </br>
 
+## Notación de símbolos en el Modelo E/R
+
+La notación original de __Peter Chen__ considera iconos o figuras para cada elemento del modelo, así, las entidades se
+representan con rectángulos, las relaciones con un rombo y los atributos con óvalos. Las líneas unen las relaciones
+(los rombos) con las entidades (rectángulos) y las entidades con los atributos (óvalos), tal como se muestra en siguiente imagen.
+
+<div align="center">
+<img src="img/modelo-er-chen.png" width="450px"/>
+</div>
+
+Si bien la notación de __Chen__ sigue siendo __muy utilizada__, _otras notaciones posteriores han logrado aceptación y popularidad_, particularmente tres se consideran válidas en el DNP para dibujar el modelo:
+- Notación Pata de Gallo.
+- Notación IDEF1X.
+- Notación REIN85.
+
+La transformación de la notación __CHEN__ a  las anteriormente citadas son las siguientes:
+<div align="center">
+<img src="img/notaciones.png" width="450px"/>
+</div>
+
+
+
 </div>
