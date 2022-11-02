@@ -65,12 +65,4 @@ Frases importantes:
    </br>
 </details>
 
-<details>
-      <summary>SOLUCION B</summary>
-  </br>
-  <img src="img/docente.drawio.png">
-  </br>
-   </br>
-</details>
-
 </div>
