@@ -20,7 +20,6 @@ Se pide:
 5. Colocar los atributos a cada entidad e interrelación.
 6. Indica la cardinalidad de las relaciones, y explicar aquellas que se requieran necesarias.
 
-<!--
 <details>
       <summary>FRASES A TENER EN CUENTA</summary>
 
@@ -57,7 +56,7 @@ Se pide:
 <details>
       <summary> PASO 3</summary>
   </br>
-  <img src="img/docente.drawio.png">
+  <img src="img/docente-entidades-relaciones.drawio.png">
   </br>
    </br>
 </details>
@@ -65,7 +64,7 @@ Se pide:
 <details>
       <summary>SOLUCION</summary>
   </br>
-  <img src="img/docente.drawio.png">
+  <img src="img/docente-diagrama.drawio.png">
   </br>
    </br>
 </details>
@@ -73,9 +72,9 @@ Se pide:
 <details>
       <summary>SOLUCION B</summary>
   </br>
-  <img src="img/docente.drawio.png">
+  <img src="img/docente-diagrama-2.drawio.png">
   </br>
    </br>
 </details>
--->
+
 </div>
