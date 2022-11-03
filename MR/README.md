@@ -198,6 +198,6 @@ _La            transformación se realiza empleando las siguientes reglas_:
   - Las relaciones 1:1 se transforman en función de las cardinalidades:
     -  Cuando ambas entidades participan con cardinalidades (1,1 )propagando cualquiera de los atributos identificadores y sus atributos asociados creando una única tabla con el conjunto de los atributos de ambas entidades. La clave primaria sería cualquiera de las dos. 
     - Cuando ambas tablas tiene cardinalidades (0,1) crear una nueva tabla a partir de la relación con las dos claves de ambas.
-    Propagar la clave de la entidad con cardinalidad (1,1) a la entidad que tenga (0,1).
+    - Cuando una es (1,1) y la otra (0,1)debemos propagar la clave de la entidad con cardinalidad (1,1) a la entidad que tenga (0,1).
 
 </div>
