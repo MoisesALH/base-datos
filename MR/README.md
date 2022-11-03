@@ -140,13 +140,6 @@ Si tenemos una relación __1:1__ y __ninguna__ tiene participación _mínima 0_,
 </div>
 
 
-## Truco
-
-A continuación se muestra un resumen de los casos disponibles en relaciones __N:M, 1:N y 1:1__.
-
-<div align="center">
-<img src="img/Esquema-Paso-ER-a-Relacional_(simplificado).webp" width="600px"/>
-</div>
 
 ### Relaciones de dependencia (Siempre de grado 2 y cardinalidad 1:N)
 Relaciones de dependencia en existencia: Se comportan como una __1:N normal__. _La clave principal del lado 1 pasa al lado «N» como foránea (hacia adonde apunta la flecha)_.
@@ -186,5 +179,25 @@ Las relaciones jerárquicas son un caso especial. Se pueden dar algunas guías q
 #### Ejemplo
 
 No encontramos ningún ejemplo de relación de jerarquía 2 en el supuesto anterior. Su paso a tablas, se verán en cuando aparezcan en los ejemplos concretos.
+
+## Truco
+
+A continuación se muestra un resumen de los casos disponibles en relaciones __N:M, 1:N y 1:1__.
+
+<div align="center">
+<img src="img/Esquema-Paso-ER-a-Relacional_(simplificado).webp" width="10000px"/>
+</div>
+
+_La            transformación se realiza empleando las siguientes reglas_:
+- Toda entidad se transforma en una tabla.
+- Todo atributo se transforma en columna dentro de la tabla.
+- El identificador único de la entidad se convierte en clave primaria.
+- Como las relaciones del modelo E/R no tienen equivalente en el modelo relacional, ya que sólo existen tablas y operaciones entre ellas, es necesario aplicar lo siguiente:
+  - En las relaciones M:N se crea una nueva tabla que tendrá como clave primaria la concatenación de los atributos clave de las entidades que asocia y con los atributos propios de la relación si los hay. Esta tabla posee dos claves ajenas, una por cada entidad con la que está relacionada.
+  - En las relaciones 1:N la entidad del lado N de la relación añade el conjunto de campos necesarios para incorporar a sus atributos la totalidad de la clave primaria de la entidad del lado 1, creando una clave ajena, de modo que se puedan relacionar ambas tablas medianteoperadores relacionales. El nombre de la relació desaparece.
+  - Las relaciones 1:1 se transforman en función de las cardinalidades:
+    -  Cuando ambas entidades participan con cardinalidades (1,1 )propagando cualquiera de los atributos identificadores y sus atributos asociados creando una única tabla con el conjunto de los atributos de ambas entidades. La clave primaria sería cualquiera de las dos. 
+    - Cuando ambas tablas tiene cardinalidades (0,1) crear una nueva tabla a partir de la relación con las dos claves de ambas.
+    Propagar la clave de la entidad con cardinalidad (1,1) a la entidad que tenga (0,1).
 
 </div>
