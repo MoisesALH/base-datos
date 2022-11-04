@@ -43,14 +43,22 @@ Frases clave:
 - La nave que viaja a un planeta puede disponer de una nave pequeña llamada lanzadera.
 - La existencia de la lanzadera solo tiene sentido si existe la nave a la que pertenece.
 
-<!--
 <details>
-      <summary>PASO 2 :PULSA PARA VER LA SOLUCIÓN</summary>
+      <summary>ENTIDADES Y RELACIONES :PULSA PARA VER LA SOLUCIÓN</summary>
   </br>
-  <img src="img/star-trek-paso-2.drawio.png">
+  <img src="img/start-trek-frases-clave.drawio.png">
   </br>
    </br>
   
 </details>
--->
+
+<details>
+      <summary>DIAGRAMA :PULSA PARA VER LA SOLUCIÓN</summary>
+  </br>
+  <img src="img/start-trek-diagrama.drawio.png">
+  </br>
+   </br>
+  
+</details>
+
 </div>
