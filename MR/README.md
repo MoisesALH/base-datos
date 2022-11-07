@@ -185,7 +185,7 @@ No encontramos ningún ejemplo de relación de jerarquía 2 en el supuesto anter
 A continuación se muestra un resumen de los casos disponibles en relaciones __N:M, 1:N y 1:1__.
 
 <div align="center">
-<img src="img/Esquema-Paso-ER-a-Relacional_(simplificado).webp" width="10000px"/>
+<img src="img/truco.drawio.png" />
 </div>
 
 _La            transformación se realiza empleando las siguientes reglas_:
