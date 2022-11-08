@@ -18,17 +18,26 @@ Se desea realizar una BD que permita apoyar la gestión de un sistema de ventas.
 <details>
       <summary>PULSA PARA VER LA SOLUCIÓN</summary>
 
-  __Paso 1__:    
+__Paso 1__:    
+</br>
+<img src="img/sistema-venta.drawio.png">
+</br>
+
+__Paso 2__:
+</br>
+<img src="img/sistema-venta-Paso-2.drawio.png">
+</br>
+
+</details>
+
+<details>
+      <summary>MODELO MR</summary>
   </br>
-  <img src="img/sistema-venta.drawio.png">
+  <img src="../../img/estamos-trabajando.png" width="200px">
   </br>
 
-  __Paso 2__:
-  </br>
-  <img src="img/sistema-venta-Paso-2.drawio.png">
-  </br>
-  
 </details>
+
 
 
 </div>
