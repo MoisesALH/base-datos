@@ -41,7 +41,7 @@ se recogen por teléfono
   - Se cuenta con una serie de repartidores identificados por un número, con el nombre completo, una matrícula de moto y un turno (mañana, tarde, noche).
     > Repartidor se convierte en entidad, dado que se produce una acción con domicilio, y posee sus propiedades (matrícula, ...). _Domicilio asigna Repartidor_.
   - El establecimiento ofrece una serie de productos (hamburguesa simple, doble, alemana, coca-cola (pequeña mediana, grande), ensalada...) identificados por un código y con un nombre y precio.      
-    > El _establecimiento ofrece productos_ y estos tienen propiedades (código, nombre y precio). 
+    > El _establecimiento ofrece productos_, la pregunta es __¿cómo?__,(a través del pedido, al igual que los menús __no__) y estos tienen propiedades (código, nombre y precio). 
   - Se ofrecen también menús especiales compuestos por un conjunto de productos. Los menús están numerados, tienen un nombre de menú y un precio.
     > El _establecimiento ofrece menus compuestos (+1 producto). Las propiedades tienen un número, nombre y precio_.
   - Un pedido puede constar de varios menús en diferentes cantidades y/o varios productos en diferentes cantidades.  
