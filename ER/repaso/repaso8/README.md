@@ -24,15 +24,46 @@ Se pide:
   4. Monta correctamente todas las entidades y sus relaciones.
   5. Colocar los atributos a cada entidad e interrelación.
   6. Indica la cardinalidad de las relaciones.
-<!--
+
 <details>
-      <summary>PASO 1 - PULSA PARA VER RESULTADO</summary>   
-  </br>
+      <summary>Frases a tener en cuenta</summary>   
+
+  - 3 primeras frases:
+    - Por cada empresa necesita NIF, dirección, población, teléfono y fax.
+    - Cada empresa es cliente o proveedora.
+    - Para las empresas clientes necesita saber además la provincia, comunidad autónoma y portes (debidos o pagados).
+    > Identificamos la entidad empresa, que posee sus atributos (NIF, ...). Además en la segunda frase se identifican dos tipos (cliente/proveedora). No obstante, dado que las empresas clientes tienen propiedades (provincia,...), __cliente y proveedora__ pasan a ser entidades de la relación.
+  - Cada proveedor provee un único producto, y cada producto es provisto por un único proveedor.
+    > Producto se identifica como entidad, y se identifica la relación _provee_.
+  - Tras cerrar el acuerdo con los clientes guardaremos constancia de qué productos nos demandará en el futuro y cual será el porcentaje de recargo a aplicar en cada producto.
+    > Se debe de guardar la relación entre el __Cliente__ y el __Producto__ _a futuro_.     
+</details>
+
+<details>
+      <summary>Entidades, Relaciones y Valores de Dominio si existen</summary>   
   
-  <img src="img/.drawio.png">
-  
-  </br>
+  - Entidades:
+    > Empresa, Cliente, Proveedor, Producto.
+  - Relaciones:  
+    > provee, a futuro, vender.
 
 </details>
--->
+
+<details>
+      <summary>Generar entidades y relaciones</summary>   
+  </br>
+  
+  > Empresa __jerarquía__: Cliente/Proveedor.
+  > Cliente __vende__ Producto.
+  > Proveedor __posee__ Producto.
+  > Producto __a futuro__ Cliente.
+
+</details>
+
+<details>
+      <summary>Diagrama, atributos y cardinalidades</summary>   
+  </br>
+  <img src="img/empresa.drawio.png">
+</details>
+
 </div>
