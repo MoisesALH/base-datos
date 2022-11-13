@@ -185,12 +185,14 @@ Siempre que sea posible se recomienda convertir las relaciones de grado 3 en dos
 
 Las relaciones de grado 3 pueden generar una nueva tabla dependiendo de la cardinalidad de la relación.
 
+
 #### Cardinalidad N:N:N
+
 
 En este caso creamos una tabla. __La clave primaria de la nueva tabla estará formada por las 3 claves de las entidades que participan en la relación__.
 
 <div align="center">
-<img src="img/carnidad-N-N-N.svg" />
+<img src="img/carnidad-N-N-N.svg" width="400px" />
 </div>
 
 #### Cardinalidad 1:N:N
@@ -198,7 +200,7 @@ En este caso creamos una tabla. __La clave primaria de la nueva tabla estará fo
 En este caso creamos una tabla. __La clave primaria de la nueva tabla estará formada por las dos claves de las entidades que participan como N en la relación__.
 #### Cardinalidad 1:1:N
 
-En este caso __NO__ es necesario crear una tabla. __La entidad que participa como N recibe las claves de las dos entidades que participan como 1__.
+En este caso __NO__ es necesario crear una tabla. __La entidad que participa como N recibe las claves de las dos entidades que participan como 1.
 
 
 ## Truco
