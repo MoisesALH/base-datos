@@ -38,14 +38,26 @@ Se pide:
 4. Determinantes sobre las tablas resultado del apartado 3
 5. Indicar claves candidatas de todas las tablas resultantes
 
-<!-->
+> Solución:
+    1. Indicar claves candidatas
+      Las claves candidatas son las siguientes:
+        - __Cuidad, CodAeropuerto__.
+        - __Cuidad, NombreAeropuerto__.
+    2.Comprobar si se cumple la 1ª Forma Normal.
+    No cumple la 1FN dado que tiene valores multivaluados
+    3.Normalizar si no se cumple el apartado 2
+    4.Determinantes sobre las tablas resultado del apartado 3
+    5.Indicar claves candidatas de todas las tablas resultantes
+
+
   <details>
       <summary>PULSA PARA VER LA SOLUCIÓN</summary>
   </br>
-  <img src="img/Ej-9.png">
-  </br>
+
 
  </details>
--->
 
+<!--
+ <img src="img/Ej-9.png">
+-->
  </div>
