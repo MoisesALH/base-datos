@@ -2,6 +2,10 @@
 
 # Gestión Escuela de Topografía de Madrid
 
+<div align="center">
+<img src="img/topografia.png" width="400px"/>
+</div>
+
 Se ha creado una base de datos para llevar las calificaciones de las asignaturas de los alumnos de primer curso de la Escuela de Topografía de Madrid.
 La tabla creada tiene los siguientes campos
 - DNI varchar (20).
@@ -32,22 +36,54 @@ Ejemplo de datos de la tabla:
  </div>
 
 Se pide:
-1. Indicar claves candidatas
-2. Comprobar si se cumple la 1ª Forma Normal
-3. Normalizar si no se cumple el apartado 2
-4. Determinantes sobre las tablas resultado del apartado 3
-5. Indicar claves candidatas de todas las tablas resultantes
+1. Indicar claves candidatas.
+2. Comprobar si se cumple la 1ª Forma Normal.
+3. Normalizar si no se cumple el apartado 2.
+4. Determinantes sobre las tablas resultado del apartado 3.
+5. Indicar claves candidatas de todas las tablas resultantes.
+
+<!--
 
 > Solución:
     1. Indicar claves candidatas
-      Las claves candidatas son las siguientes:
-        - __Cuidad, CodAeropuerto__.
-        - __Cuidad, NombreAeropuerto__.
+      Es una tabla que relaciona alumnos y asignaturas.Claves candidatas
+        - DNI, Asignatura. 
+        - Apellidos, Nombre, Asignatura.
+        - DNI, Codigo.
+        - Apellidos, Nombre, Codigo.
     2.Comprobar si se cumple la 1ª Forma Normal.
-    No cumple la 1FN dado que tiene valores multivaluados
-    3.Normalizar si no se cumple el apartado 2
-    4.Determinantes sobre las tablas resultado del apartado 3
-    5.Indicar claves candidatas de todas las tablas resultantes
+    No cumple la primera forma normal porque los campos __Código, Asignatura y Nota__ no son atómicos.
+    3.Normalizar si no se cumple el apartado 2.
+
+<div align="center">
+
+__Alumno__
+
+ <img src="img/ALUMNO.png" />
+ </div>
+
+
+ <div align="center">
+
+ __Alumno-Asignatura__
+
+ <img src="img/ALUMNO-ASIGNATURA.png" />
+ </div>
+
+ <div align="center">
+
+__Asignatura__
+
+
+ <img src="img/ASIGNATURA.png" />
+ </div>
+
+    4.Determinantes sobre las tablas resultado del apartado 3.
+    Se relacionan los campos según se indica en la imagén anterior.
+    5.Indicar claves candidatas de todas las tablas resultantes.
+    - Alumno: dni.
+    - Asignatura: código.
+    - Alumno-Asignatura: dni,código.
 
 
   <details>
@@ -57,7 +93,5 @@ Se pide:
 
  </details>
 
-<!--
- <img src="img/Ej-9.png">
 -->
  </div>
