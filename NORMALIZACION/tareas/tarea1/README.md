@@ -30,8 +30,6 @@ Se pide:
 4. Determinantes sobre las tablas resultado del apartado 3.
 5. Indicar claves candidatas de todas las tablas resultantes.
 
-<!--
-
   <details>
       <summary>SOLUCIÓN</summary>
   </br>
@@ -78,5 +76,4 @@ __P.D.__: Recuerda la relación que se crea es __N:M__, aunque también podría 
 
 </details>
 
--->
  </div>

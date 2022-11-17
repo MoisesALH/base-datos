@@ -15,6 +15,6 @@ Repositorio dedicado a la asignatura de BBDD.
 
  - [Diagrama ER](ER/README.md)
  - [Modelo Relacional](MR/README.md) 
-
+ - [Normalización](NORMALIZACION/README.md) 
 
 </div>
