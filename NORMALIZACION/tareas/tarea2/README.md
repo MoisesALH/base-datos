@@ -44,16 +44,19 @@ Se pide:
 
 <!--
 
-> Solución:
-    1. Indicar claves candidatas
-      Es una tabla que relaciona alumnos y asignaturas.Claves candidatas
-        - DNI, Asignatura. 
-        - Apellidos, Nombre, Asignatura.
-        - DNI, Codigo.
-        - Apellidos, Nombre, Codigo.
-    2.Comprobar si se cumple la 1ª Forma Normal.
+  <details>
+      <summary>SOLUCIÓN</summary>
+  </br>
+
+  1. Indicar claves candidatas
+  Es una tabla que relaciona alumnos y asignaturas.Claves candidatas
+  - DNI, Asignatura. 
+  - Apellidos, Nombre, Asignatura.
+  - DNI, Codigo.
+  - Apellidos, Nombre, Codigo.
+  2.Comprobar si se cumple la 1ª Forma Normal.
     No cumple la primera forma normal porque los campos __Código, Asignatura y Nota__ no son atómicos.
-    3.Normalizar si no se cumple el apartado 2.
+  3.Normalizar si no se cumple el apartado 2.
 
 <div align="center">
 
@@ -74,16 +77,15 @@ __Alumno__
 
 __Asignatura__
 
-
  <img src="img/ASIGNATURA.png" />
  </div>
 
-    4.Determinantes sobre las tablas resultado del apartado 3.
-    Se relacionan los campos según se indica en la imagén anterior.
-    5.Indicar claves candidatas de todas las tablas resultantes.
-    - Alumno: dni.
-    - Asignatura: código.
-    - Alumno-Asignatura: dni,código.
+  4.Determinantes sobre las tablas resultado del apartado 3.
+  Se relacionan los campos según se indica en la imagén anterior.
+  5.Indicar claves candidatas de todas las tablas resultantes.
+  - Alumno: dni.
+  - Asignatura: código.
+  - Alumno-Asignatura: dni,código.
 
 
   <details>
