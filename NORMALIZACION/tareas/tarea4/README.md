@@ -15,7 +15,7 @@ La representación de la información dentro de la BBDD es la siguiente:
 |-----|-----|-----|-----|-----|-----| 
 | 1001 | Variable compleja  |  Murray Spiegel  | McGraw Hill |Pérez Gómez, Juan |15/04/2022 |
  |1004 | Visual Basic 5 | E. Petroustsos | Anaya | Ríos Terán, Ana | 17/04/2022  | 
- | 1005 | Estadística | Murray | Spiegel | McGraw Hill | Roca, René | 16/04/2022
+ | 1005 | Estadística | Murray Spiegel | McGraw Hill | Roca, René | 16/04/2022  | 
  | 1006  | Oracle University | Nancy Greenberg y Priya Nathan | Oracle Corp. | García Roque, Luis | 20/04/2022 | 
 | 1007 | Clipper 5.01 | Ramalho | McGraw Hill | Pérez Gómez, Juan | 18/04/2022 |
 
