@@ -42,7 +42,6 @@ Se pide:
 4. Determinantes sobre las tablas resultado del apartado 3.
 5. Indicar claves candidatas de todas las tablas resultantes.
 
-<!--
 
   <details>
       <summary>SOLUCIÓN</summary>
@@ -92,8 +91,6 @@ __Asignatura__
       <summary>PULSA PARA VER LA SOLUCIÓN</summary>
   </br>
 
-
  </details>
 
--->
  </div>
