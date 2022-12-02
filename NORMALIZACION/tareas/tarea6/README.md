@@ -1,6 +1,6 @@
 <div align="justify">
 
-# Editorial
+# Villanos
 
 <div align="center">
 <img src="img/villanos.png" width="400px"/>
