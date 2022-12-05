@@ -69,6 +69,10 @@ Dicho esto, vamos a contestar a cada una de las preguntas:
         <img src="img/3fn.drawio.png" width="400px"/>
     </div>
 
+   <div align="center">
+        <img src="img/mr.drawio.png" width="400px"/>
+    </div>  
+
 
 
     > Nota: Imaginemos que en la primera pregunta, respondemos que la tabla se encuentra normalizada en 1FN.
