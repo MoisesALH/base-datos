@@ -34,3 +34,43 @@ Se pide:
 6. Normalizar si no se cumple el apartado 5.
 7. Indicar claves de todas las tablas resultantes.
 9. Genera el __diagrama E/R resultante__.
+
+  <details>
+      <summary>SOLUCIÓN</summary>
+  </br>
+    
+    >> Nota: Hemos de tener en cuenta las definición de las tres formas normales:
+ 1. Una tabla está en _1FN si y sólo si_ ___cada atributo es atómico___.
+ 2. Una tabla esta en _2FN si y sólo si está en 1FN y_ ___todos los atributos tienen dependencia funcional completa de la Clave Principal___.
+ 3.  Una tabla esta en _3FN si y sólo si está en 2FN_ y ___no existen dependencias transitivas___.
+
+Dicho esto, vamos a contestar a cada una de las preguntas:
+ 1. Comprobar si se cumple la 1ª Forma Normal.
+  __No cumple__, ya que los valores no son atómicos. El campo __id_orden__ tiene el mismo valor en diferentes tuplas.
+ 2. Normalizar si no se cumple el apartado 2.
+    Hemos de separar en tablas para que sus __valores sean atómicos__.
+    
+    <div align="center">
+        <img src="img/1fn.drawio.png" width="400px"/>
+    </div>
+
+ 3. Comprobar si se cumple la 2ª Forma Normal.
+    Esta en __1FN__, y además, todos los atributos de las tablas tienen dependencia funcional completa con su respectivas claves primarias (__PK__). Con lo cual __cumple la 2FN__.
+ 4. Normalizar si no se cumple el apartado 4.
+    No es necesario realizar el paso 3.
+ 5. Comprobar si se cumple la 3ª Forma Normal.
+    La tabla esta en __2FN__, y además no existe transitividad entre las columnas de cada una de las tablas. __Cumple la 3FN__.
+ 6. Normalizar si no se cumple el apartado 5.
+    No es necesario realizar este paso.
+ 7. Indicar claves de todas las tablas resultantes.
+ 9. Genera el __diagrama E/R resultante__.
+
+ <div align="center">
+        <img src="img/3fn.drawio.png" width="400px"/>
+    </div>
+
+
+</details>
+
+
+  
