@@ -70,6 +70,12 @@ Dicho esto, vamos a contestar a cada una de las preguntas:
     </div>
 
 
+
+    > Nota: Imaginemos que en la primera pregunta, respondemos que la tabla se encuentra normalizada en 1FN.
+
+La pregunta sería: ¿Se cumple la 2FN?
+ La respuesta es que no, y debemos de sacar todas las columnas que no se encuentran asociadas con la __clave principal__. 
+ La solución parcial indicaría sería similar al resultado final. No obstante, cuando transformamos a MR y ER, nos daremos cuenta que debemos de realizar una nueva tabla (N:M), con su propiedad y quedando la solución como la que se muestra.
 </details>
 
 
