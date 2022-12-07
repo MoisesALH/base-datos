@@ -1,6 +1,6 @@
 <div align="justify">
 
-# Editorial
+# Biblioteca
 
 <div align="center">
 <img src="img/biblioteca.png" width="400px"/>
@@ -170,7 +170,8 @@ Realizando el __diagrama E/R__, nos daremos cuenta que necesitamos crear nuevas 
 
 Como podemos observar, se generan 5 tablas con sus respectivas claves.
 
- > NOTA: __La 2FN dependerá en gran medida de lo que haga en la 1FN__. 
+ > NOTA: __La 2FN dependerá en gran medida de lo que haga en la 1FN__.
+ __Una solución aun más optima de cara al mantenimiento futuro, sería sacar editorial, y tener una relación edita, con una cardinalidad 1:N__. 
 
 </details>
 
