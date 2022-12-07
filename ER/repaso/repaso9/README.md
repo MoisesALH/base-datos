@@ -54,19 +54,19 @@ Se pide:
   3. Generar los entidades y relaciones de cada frase que hayas detectado, sin indicar cardinalidad, etc.
 
 <div align="center">
-<img src="img/nomina-entidades-relaciones.drawio.png" width="4600px"/>
+<img src="img/nomina-entidades-relaciones.drawio.png" width="400px"/>
 </div>
 
   4. Monta correctamente todas las entidades y sus relaciones.
 
 <div align="center">
-<img src="img/nomina-modelo.drawio.png" width="600px"/>
+<img src="img/nomina-modelo.drawio.png" width="400px"/>
 </div>
 
   5. Colocar los atributos a cada entidad e interrelación.
 
 <div align="center">
-<img src="img/nomina-atributos.drawio.png" width="600px"/>
+<img src="img/nomina-atributos.drawio.png" width="400px"/>
 </div>
 
   6. Indica la cardinalidad de las relaciones.
