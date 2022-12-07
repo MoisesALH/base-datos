@@ -14,9 +14,9 @@ La representación de la información dentro de la BBDD es la siguiente:
 | CodLibro | Titulo| Autor |Editorial | NombreLector| FechaDev | 
 |-----|-----|-----|-----|-----|-----| 
 | 1001 | Variable compleja  |  Murray Spiegel  | McGraw Hill |Pérez Gómez, Juan |15/04/2022 |
- |1004 | Visual Basic 5 | E. Petroustsos | Anaya | Ríos Terán, Ana | 17/04/2022  | 
- | 1005 | Estadística | Murray Spiegel | McGraw Hill | Roca, René | 16/04/2022  | 
- | 1006  | Oracle University | Nancy Greenberg y Priya Nathan | Oracle Corp. | García Roque, Luis | 20/04/2022 | 
+|1004 | Visual Basic 5 | E. Petroustsos | Anaya | Ríos Terán, Ana | 17/04/2022  | 
+| 1005 | Estadística | Murray Spiegel | McGraw Hill | Roca, René | 16/04/2022  | 
+| 1006  | Oracle University | Nancy Greenberg y Priya Nathan | Oracle Corp. | García Roque, Luis | 20/04/2022 | 
 | 1007 | Clipper 5.01 | Ramalho | McGraw Hill | Pérez Gómez, Juan | 18/04/2022 |
 
 Se pide:
@@ -46,13 +46,12 @@ Dicho esto, vamos a contestar a cada una de las preguntas:
 
  2. Normalizar si no se cumple el apartado 1.
 
-
 | CodLibro | Titulo| Autor |Editorial | NombreLector| FechaDev | 
 |-----|-----|-----|-----|-----|-----| 
 | 1001 | Variable compleja  |  Murray Spiegel  | McGraw Hill |Pérez Gómez, Juan |15/04/2022 |
- |1004 | Visual Basic 5 | E. Petroustsos | Anaya | Ríos Terán, Ana | 17/04/2022  | 
- | 1005 | Estadística | Murray Spiegel | McGraw Hill | Roca, René | 16/04/2022  | 
- | 1006  | Oracle University | Priya Nathan | Oracle Corp. | García Roque, Luis | 20/04/2022 |
+|1004 | Visual Basic 5 | E. Petroustsos | Anaya | Ríos Terán, Ana | 17/04/2022  | 
+| 1005 | Estadística | Murray Spiegel | McGraw Hill | Roca, René | 16/04/2022  | 
+| 1006  | Oracle University | Priya Nathan | Oracle Corp. | García Roque, Luis | 20/04/2022 |
 | 1006  | Oracle University | Nancy Greenberg  | Oracle Corp. | García Roque, Luis | 20/04/2022 |  
 | 1007 | Clipper 5.01 | Ramalho | McGraw Hill | Pérez Gómez, Juan | 18/04/2022 |
 
@@ -61,9 +60,9 @@ Como podemos observar existe ___redundancia en la base de datos___, y sigue sin 
 | CodLibro | Titulo| Autor |Editorial | Apellido1Lector | Apellido2Lector | NombreLector | FechaDev | 
 |-----|-----|-----|-----|-----|-----|-----|-----|  
 | 1001 | Variable compleja  |  Murray Spiegel  | McGraw Hill | Pérez  |Gómez | Juan | 15/04/2022 |
- |1004 | Visual Basic 5 | E. Petroustsos | Anaya | Ríos | Terán |Ana | 17/04/2022  | 
- | 1005 | Estadística | Murray Spiegel | McGraw Hill | Roca | | René | 16/04/2022  | 
- | 1006  | Oracle University | Priya Nathan | Oracle Corp. | García | Roque | Luis | 20/04/2022 |
+|1004 | Visual Basic 5 | E. Petroustsos | Anaya | Ríos | Terán |Ana | 17/04/2022  | 
+| 1005 | Estadística | Murray Spiegel | McGraw Hill | Roca | | René | 16/04/2022  | 
+| 1006  | Oracle University | Priya Nathan | Oracle Corp. | García | Roque | Luis | 20/04/2022 |
 | 1006  | Oracle University | Nancy Greenberg  | Oracle Corp. | García | Roque | Luis | 20/04/2022 |  
 | 1007 | Clipper 5.01 | Ramalho | McGraw Hill | Pérez | Gómez | Juan | 18/04/2022 |
 
@@ -102,23 +101,20 @@ Transformando esta tabla quedará de la siguiente manera:
 Como podemos observar, la tabla cumple la __1FN__ y hemos incorporado una __clave primaria (PK)__, identificador, dado que __NO__ existía ninguna columna que fuera _clave candidata_.
 
 | CodLibro | Titulo| Editorial | Apellido1Lector | Apellido2Lector | NombreLector | FechaDev | 
-|-----|-----|-----|-----|-----|-----|-----|-----|  
+|-----|-----|-----|-----|-----|-----|-----| 
 | 1001 | Variable compleja  | McGraw Hill | Pérez  |Gómez | Juan | 15/04/2022 |
-|1004 | Visual Basic 5 | Anaya | Ríos | Terán |Ana | 17/04/2022  | 
+| 1004 | Visual Basic 5 | Anaya | Ríos | Terán |Ana | 17/04/2022  | 
 | 1005 | Estadística | McGraw Hill | Roca | | René | 16/04/2022  | 
-| 1006  | Oracle University | Oracle Corp. | García | Roque | Luis | 20/04/2022 |
-| 1006  | Oracle University | Oracle Corp. | García | Roque | Luis | 20/04/2022 |  
+| 1006 | Oracle University | Oracle Corp. | García | Roque | Luis | 20/04/2022 |
+| 1006 | Oracle University | Oracle Corp. | García | Roque | Luis | 20/04/2022 |  
 | 1007 | Clipper 5.01 | Ramalho | Pérez | Gómez | Juan | 18/04/2022 |
 
-
-
- 3. Comprobar si se cumple la 2ª Forma Normal.
+3. Comprobar si se cumple la 2ª Forma Normal.
 
 La __Segunda Forma Normal (2NF)__ pide que no existan dependencias parciales o dicho de otra manera, todos los atributos no clave deben depender por completo de la clave primaria. Actualmente en nuestra tabla tenemos varias dependencias parciales si consideramos como atributo clave el código del libro.
 
- 4. Normalizar si no se cumple el apartado 4.
-    
-
+4. Normalizar si no se cumple el apartado 4.
+   
 Por ejemplo, el _título es completamente identificado por el código del libro_, pero __el lector en realidad no tiene dependencia de este código__, por tanto estos datos deben ser trasladados a otra tabla.
 
 | Identificador | Apellido1 | Apellido2| Nombre |
@@ -149,13 +145,12 @@ La tabla Libro quedará ahora:
 __Libro__
 
 | Codigo | Titulo| Editorial  | FechaDev | 
-|-----|-----|-----|-----|-----|-----|-----|-----|  
+|-----|-----|-----|-----|
 | 1001 | Variable compleja | McGraw Hill | 15/04/2022 |
-| 1004 | Visual Basic 5 | Anaya | 17/04/2022  | 
-| 1005 | Estadística | McGraw Hill | 16/04/2022  | 
-| 1006  | Oracle University | Oracle Corp. | 20/04/2022 |
-| 1006  | Oracle University | Oracle Corp. | 20/04/2022 |  
-| 1007 | Clipper 5.01 | Ramalho | 18/04/2022 |
+| 1002 | Visual Basic 5 | Anaya | 17/04/2022  | 
+| 1003 | Estadística | McGraw Hill | 16/04/2022  | 
+| 1004  | Oracle University | Oracle Corp. | 20/04/2022 |
+| 1005 | Clipper 5.01 | Ramalho | 18/04/2022 |
 
  5. Comprobar si se cumple la 3ª Forma Normal.
     La tabla esta en __2FN__, y además no existe transitividad entre las columnas de cada una de las tablas. __Cumple la 3FN__.
@@ -176,10 +171,9 @@ Realizando el __diagrama E/R__, nos daremos cuenta que necesitamos crear nuevas 
 
 Como podemos observar, se generan 5 tablas con sus respectivas claves.
 
+ > NOTA: __La 2FN dependerá en gran medida de lo que haga en la 1FN__. 
 
-
-<!--
 </details>
--->
+
 
 </div>
