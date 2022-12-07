@@ -120,7 +120,7 @@ __Serie__
 Y la tabla __Episodio__ que quedaria como sigue:
 
 | __(Código)FK,PK__ | __Episodio(PK)__ | Nombre  | __Fecha Estreno(PK)__ | 
-|-----|-----|-----|-----|-----|
+|-----|-----|-----|-----|
 |100 | 01 | Batman |  2014 | 
 |100 | 02 | Batman |  2014 | 
 |100 | 03 | Batman |  2014 | 
