@@ -58,7 +58,7 @@ Sacando las tablas __villano__ y __rating__, la __BBDD__ queda de la siguiente m
 __Serie__:
 
 |Código | Episodio | Nombre Serie  | Fecha Estreno | 
-|-----|-----|-----|-----|-----|
+|-----|-----|-----|-----|
 |100 | 01 | Batman |  2014 | 
 |100 | 02 | Batman |  2014 | 
 |100 | 03 | Batman |  2014 | 
