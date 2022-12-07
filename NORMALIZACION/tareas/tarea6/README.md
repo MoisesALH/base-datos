@@ -152,10 +152,8 @@ Realizando el __diagrama E/R__, nos daremos cuenta que necesitamos crear nuevas 
         <img src="img/villanos-solucion.png" />
     </div>  
 
-
-Como podemos observar, se generan 5 tablas con sus respectivas claves.
-
- > NOTA: __La 2FN dependerá en gran medida de lo que haga en la 1FN__.
+ > Como podemos observar, se generan __6__ tablas con sus respectivas claves, en la solución óptima, y __5__ en la anterior.
+  > __La 2FN dependerá en gran medida de lo que haga en la 1FN__.
 
 </details>
 
