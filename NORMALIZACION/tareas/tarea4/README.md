@@ -30,11 +30,10 @@ Se pide:
 7. Indicar claves de todas las tablas resultantes.
 9. Genera el __diagrama E/R resultante__.
 
-<!--
 <details>
       <summary>SOLUCIÓN</summary>
   </br>
--->    
+    
     > Nota: Hemos de tener en cuenta las definición de las tres formas normales:
  1. Una tabla está en _1FN si y sólo si_ ___cada atributo es atómico___.
  2. Una tabla esta en _2FN si y sólo si está en 1FN y_ ___todos los atributos tienen dependencia funcional completa de la Clave Principal___.
