@@ -1,7 +1,7 @@
 <div align="justify">
 
-<!--
-# Guardería
+<!-- -->
+# Centro Estudios
 
 <div align="center">
 <img src="img/guarderia.png" width="400px"/>
@@ -9,16 +9,19 @@
 
 </br>
 
-| Codigo alumno | Nombre alumno | Seccion | Codigo curso | Nombre curso | Nombre docente | Oficina | Curso| 
-|-----|-----|-----|-----|-----|-----|-----|-----|
-| 382145A | Luis Zuloaga | Industrial | MA123 | Matematica 2 |  Carlos Arambulo |  CB-214 |  U |
-| 382145A | Luis Zuloaga | Industrial | QU514 | Física y química | Petra Rondinel | CB-110 | U | 
-| 382145A | Luis Zuloaga | Industrial | AU521 | Descriptiva | Victor Moncada | CB-120 | W | 
-| 360247K | Raúl Rojas | Sistemas | PA714 | Investigación I | César Fernandez | SC-220 | V | 
-| 360247K | Raúl Rojas | Sistemas | MA123 | Matemática 2 | Carlos Arambulo | CB-214 | V | 
-| 360247K | Raúl Rojas| Sistemas | AU511 | Dibujo | Victor Moncada | CB-120 | U | 
+| Colegio | Profesor | Asignatura/ habilidad | Aula | Curso | Libro | Editorial | Fecha_prestamo |
+|-----|-----|-----|-----|-----|-----|-----|-----|  
+| C.P Cervantes | Juan Pérez | Pensamiento Lógico | 1.A01  | 1er Grado  | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
+| C.P Cervantes | Juan Pérez | Escritura  |  1.A01  | 1er Grado Preescolar Rubio,N56 | Técnicas | Rubio | 05/05/2022 |
+| C.P Cervantes | Juan Pérez | Pensamiento Numérico | 1.A01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 05/05/2022 |
+| C.P Cervantes | Alicia García | Pensamiento Espacial, Temporal y causal | 1.B01 | 1er Grado | Educación Infantil N9 | Prentice Hall | 06/05/2022 |
+| C.P Cervantes | Alicia García | Pensamiento Numérico| 1.A01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 06/05/2022 |
+| C.P Cervantes | Andrés Fernández | Escritura | 1.A01  | 2er Grado  | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
+| C.P Cervantes | Andrés Fernández | Ingles | 1.A01  | 2er Grado  | Saber educar: guía para Padres y Profesores | Temas de Hoy   | 05/05/2022 |  
+| C.P Quevedo | Juan Méndez | Pensamiento Lógico | 2.B01 | 1er Grado | Saber educar: guía para Padres y Profesores | Temas de Hoy | 18/12/2022 |
+| C.P Quevedo | Juan Méndez | Pensamiento Numérico | 2.B01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 06/05/2022 |
 
-Dada la siguiente relación MATRICULA  que contiene información relativa a las matrículas. Se pide:
+Dada la siguiente relación PRÉSTAMO (Colegio, Profesor,Asignatura, Aula, Curso, Libro, Editorial,Fecha_Préstamo) que contiene información relativa a los préstamos que realizan las editoriales a los profesores de primaria de los colegios para su evaluación en alguna de las asignaturas/habilidades que imparten. Se pide:
 1. Realiza la normalización hasta la 3FN, indicando cada uno de los pasos (1, 2 y 3 FN).
 - 1FN.
 - 2FN.
@@ -32,65 +35,63 @@ __Solución__
 
 > Recordemos que: Una tabla está en ___1FN si y sólo si  cada atributo es atómico___.
 
- En este caso la tabla __NO__ se encuentra en __1FN__ dado que sus valores no son atómicos.
- La primera aproximación a la solución, será hacer atómicos todos los valores de la tabla. 
+ En este caso la tabla __NO__ se encuentra en __1FN__ dado que sus valores no son atómicos. Por ejemplo la columna __Profesor__ no es atómino, La primera aproximación a la solución, será hacer atómicos todos los valores de la tabla.
 
-| Codigo alumno | Nombre Alumno | Apellido Alumno |Seccion | Codigo curso | Nombre curso | Nombre docente | Apellido docente | Oficina | Curso| 
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| 382145A | Luis | Zuloaga | Industrial | MA123 | Matematica 2 |  Carlos | Arambulo |  CB-214 |  U |
-| 382145A | Luis | Zuloaga | Industrial | QU514 | Física y química | Petra | Rondinel | CB-110 | U | 
-| 382145A | Luis | Zuloaga | Industrial | AU521 | Descriptiva | Victor | Moncada | CB-120 | W | 
-| 360247K | Raúl | Rojas | Sistemas | PA714 | Investigación I | César | Fernandez | SC-220 | V | 
-| 360247K | Raúl | Rojas | Sistemas | MA123 | Matemática 2 | Carlos | Arambulo | CB-214 | V | 
-| 360247K | Raúl | Rojas| Sistemas | AU511 | Dibujo | Victor | Moncada | CB-120 | U | 
+| Colegio | Nombre Profesor | Apellido Profesor | Asignatura/ habilidad | Aula | Curso | Libro | Editorial | Fecha_prestamo |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----| 
+| C.P Cervantes | Juan | Pérez | Pensamiento Lógico | 1.A01  | 1er Grado  | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
+| C.P Cervantes | Juan | Pérez | Escritura  |  1.A01  | 1er Grado Preescolar Rubio,N56 | Técnicas | Rubio | 05/05/2022 |
+| C.P Cervantes | Juan | Pérez | Pensamiento Numérico | 1.A01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 05/05/2022 |
+| C.P Cervantes | Alicia | García | Pensamiento Espacial, Temporal y causal | 1.B01 | 1er Grado | Educación Infantil N9 | Prentice Hall | 06/05/2022 |
+| C.P Cervantes | Alicia | García | Pensamiento Numérico| 1.A01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 06/05/2022 |
+| C.P Cervantes | Andrés | Fernández | Escritura | 1.A01  | 2er Grado  | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
+| C.P Cervantes | Andrés | Fernández | Ingles | 1.A01  | 2er Grado  | Saber educar: guía para Padres y Profesores | Temas de Hoy   | 05/05/2022 |  
+| C.P Quevedo | Juan | Méndez | Pensamiento Lógico | 2.B01 | 1er Grado | Saber educar: guía para Padres y Profesores | Temas de Hoy | 18/12/2022 |
+| C.P Quevedo | Juan | Méndez | Pensamiento Numérico | 2.B01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 06/05/2022 |
 
 Como podemos observar, ahora mismo todos los valores son atómicos, pero existe __redundancia en la BBDD__.
 
-En este momento vamos que la clave principal se repite __"360247K"__. 
+En este momento vamos que la hay múltiples valores que se repiten. Por ejemplo: __Colegio, Profesor, Asignatura, Aula,...__.
 
-Si nos fijamos veremos que la tabla representa __elementos multivaluedos__. Por ejemplo, el alumno __"360247K"__, cursa 3 asignaturas: __Investigación I, Matemática 2, y Dibujo__. Esto quiere decir que los valores del curso (__Código y Curso__) son elementos multivaualos y deben salir de la tabla. Nos quedará como sigue:
+Por ejemplo el profesor Juan Pérez, imparte en el colegio Cervantes tres asignaturas, las cuales serán: __Pensamiento Lógico, Escritura, y Pensamiento Número__, todas ellas relacionadas con su __libro, editorial y fecha de prestamo__. Además este __sólo imparte__ en un aula (1.A01), y en el mismo curso (1er Grado). Esto quiere decir que el valor multievaluado será __La Asignatura, con su nombre, libro, editorial y fecha de prestamo__.
 
-| Codigo alumno | Nombre Alumno | Apellido Alumno |Seccion | Nombre docente | Apellido docente | Curso| 
-|-----|-----|-----|-----|-----|-----|-----|
-| 382145A | Luis | Zuloaga | Industrial |  Carlos | Arambulo | U |
-| 382145A | Luis | Zuloaga | Industrial | Petra | Rondinel | U | 
-| 382145A | Luis | Zuloaga | Industrial | Victor | Moncada | W | 
-| 360247K | Raúl | Rojas | Sistemas | César | Fernandez | V | 
-| 360247K | Raúl | Rojas | Sistemas | Carlos | Arambulo | V | 
-| 360247K | Raúl | Rojas| Sistemas | Victor | Moncada | U | 
+__Asignatura:__
 
-__Curso__
-Codigo | Nombre |
-|-----|-----|
-| MA123 | Matematica 2 | 
-| QU514 | Física y química | 
-| AU521 | Descriptiva | 
-| PA714 | Investigación I | 
-| AU511 | Dibujo |
+| Asignatura/ habilidad | Libro | Editorial | Fecha_prestamo |
+|-----|-----|-----|-----|-----|-----|-----|-----| -----|
+| Pensamiento Lógico | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
+| Escritura | Preescolar Rubio,N56 | Técnicas Rubio | 05/05/2022 |
+| Pensamiento Numérico | Aprender y Enseñar eneducación infantil | Graó | 05/05/2022 |
+| Pensamiento Espacial, Temporal y causal | Educación Infantil N9 | Prentice Hall | 06/05/2022 |
+| Pensamiento Numérico | Aprender y Enseñar eneducación infantil | Graó | 06/05/2022 |
+| Escritura | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
+| Ingles | Saber educar: guía para Padres y Profesores | Temas de Hoy  | 05/05/2022 |  
+| Pensamiento Lógico | Saber educar: guía para Padres y Profesores | Temas de Hoy | 18/12/2022 |
+| Pensamiento Numérico | Aprender y Enseñar en educación infantil | Graó | 06/05/2022 |
 
 2. __2FN__
 
 > Una tabla ___esta en 2FN si y sólo si está en 1FN y todos los atributos tienen dependencia funcional completa de la Clave Principal___.
 
-En este caso, esta claro que el __docente no guarda relación con la clave principal__. 
+En este caso, esta claro que el __docente no guarda relación con la clave principal__.
 
 Siguiendo la normalización, las tablas quedarán como siguen:
 
 __Alumno__:
 
-| Codigo | Nombre  | Apellido |Especialidad | 
+| Codigo | Nombre  | Apellido |Especialidad |
 |-----|-----|-----|-----|
 | 382145A | Luis | Zuloaga | Industrial |
-| 360247K | Raúl | Rojas | Sistemas | 
+| 360247K | Raúl | Rojas | Sistemas |
 
 __Docente:__
 
-| Identificador | Nombre | Apellido | Oficina |Seccion | 
+| Identificador | Nombre | Apellido | Oficina |Seccion |
 |-----|-----|-----|-----|-----|
 |  0001 |  Carlos | Arambulo | CB-214 |  U |
-|  0002 | Petra | Rondinel | CB-110 | U | 
-|  0003 | Victor | Moncada | CB-120 | W | 
-|  0004 | César | Fernandez | SC-220 | V | 
+|  0002 | Petra | Rondinel | CB-110 | U |
+|  0003 | Victor | Moncada | CB-120 | W |
+|  0004 | César | Fernandez | SC-220 | V |
 |  0005 |  Carlos | Arambulo | CB-214 |  V |
 |  0006 | Victor | Moncada | CB-120 | U |
 
@@ -113,19 +114,19 @@ __Oficina:__
 
 __Docente:__
 
-| Identificador | Nombre | Apellido | 
+| Identificador | Nombre | Apellido |
 |-----|-----|-----|
 |  0001 |  Carlos | Arambulo |
-|  0002 | Petra | Rondinel | 
-|  0003 | Victor | Moncada | 
+|  0002 | Petra | Rondinel |
+|  0003 | Victor | Moncada |
 |  0004 | César | Fernandez |
 
 __Seccion:__
 
-| Nombre | 
+| Nombre |
 |-----|
 |  U |
-| W | 
+| W |
 | V |
 
 En este momento la BBDD se encuentra en __2FN__, aunque ___hemos de tener en cuenta, que estamos perdiendo información, es decir, las relaciones entre los alumnos, asignaturas, y docentes, y especialidades que veremos más adelante___.
