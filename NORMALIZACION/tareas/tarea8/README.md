@@ -57,7 +57,7 @@ Por ejemplo el profesor Juan Pérez, imparte en el colegio Cervantes tres asigna
 __Asignatura:__
 
 | Asignatura/ habilidad | Libro | Editorial | Fecha_prestamo |
-|-----|-----|-----|-----|-----|
+|-----|-----|-----|-----|
 | Pensamiento Lógico | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
 | Escritura | Preescolar Rubio,N56 | Técnicas Rubio | 05/05/2022 |
 | Pensamiento Numérico | Aprender y Enseñar eneducación infantil | Graó | 05/05/2022 |
