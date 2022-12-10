@@ -12,7 +12,7 @@
 | Colegio | Profesor | Asignatura/ habilidad | Aula | Curso | Libro | Editorial | Fecha_prestamo |
 |-----|-----|-----|-----|-----|-----|-----|-----|  
 | C.P Cervantes | Juan Pérez | Pensamiento Lógico | 1.A01  | 1er Grado  | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
-| C.P Cervantes | Juan Pérez | Escritura  |  1.A01  | 1er Grado Preescolar Rubio,N56 | Técnicas | Rubio | 05/05/2022 |
+| C.P Cervantes | Juan Pérez | Escritura  |  1.A01  | 1er Grado  | Preescolar Rubio,N56 | TécnicasRubio | 05/05/2022 |
 | C.P Cervantes | Juan Pérez | Pensamiento Numérico | 1.A01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 05/05/2022 |
 | C.P Cervantes | Alicia García | Pensamiento Espacial, Temporal y causal | 1.B01 | 1er Grado | Educación Infantil N9 | Prentice Hall | 06/05/2022 |
 | C.P Cervantes | Alicia García | Pensamiento Numérico| 1.A01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 06/05/2022 |
@@ -73,16 +73,17 @@ __Asignatura:__
 
 > Una tabla ___esta en 2FN si y sólo si está en 1FN y todos los atributos tienen dependencia funcional completa de la Clave Principal___.
 
-En este caso, esta claro que el __docente no guarda relación con la clave principal__.
+En este caso, esta claro que el __docente no guarda relación con la clave principal, al igual que el colegio__.
 
 Siguiendo la normalización, las tablas quedarán como siguen:
 
-__Alumno__:
 
-| Codigo | Nombre  | Apellido |Especialidad |
-|-----|-----|-----|-----|
-| 382145A | Luis | Zuloaga | Industrial |
-| 360247K | Raúl | Rojas | Sistemas |
+__Colegio:__
+
+| Identificador | Nombre |
+|-----|-----|
+| 001 | C.P Cervantes |
+| 002 | C.P Quevedo |
 
 __Docente:__
 
@@ -129,7 +130,7 @@ __Seccion:__
 | W |
 | V |
 
-En este momento la BBDD se encuentra en __2FN__, aunque ___hemos de tener en cuenta, que estamos perdiendo información, es decir, las relaciones entre los alumnos, asignaturas, y docentes, y especialidades que veremos más adelante___.
+En este momento la BBDD se encuentra en __2FN__, aunque ___hemos de tener en cuenta, que estamos perdiendo información, es decir, las relaciones entre las asignaturas, docentes, etc.___.
 
 3. __3FN__
 
