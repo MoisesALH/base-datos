@@ -1,7 +1,7 @@
 <div align="justify">
 
-<!--
-# Guardería
+
+# Centro Estudios
 
 <div align="center">
 <img src="img/guarderia.png" width="400px"/>
@@ -154,5 +154,4 @@ Teniendo esto en cuenta:
 
 5. Realiza el Modelo Relacional con la solución obtenida. Será realizar la transformación del modelo __ER__ anterior.
 
--->
 </div>

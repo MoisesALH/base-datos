@@ -1,6 +1,5 @@
 <div align="justify">
 
-<!-- -->
 # Centro Estudios
 
 <div align="center">
@@ -58,7 +57,7 @@ Por ejemplo el profesor Juan Pérez, imparte en el colegio Cervantes tres asigna
 __Asignatura:__
 
 | Asignatura/ habilidad | Libro | Editorial | Fecha_prestamo |
-|-----|-----|-----|-----|-----|-----|-----|-----| -----|
+|-----|-----|-----|-----|-----|
 | Pensamiento Lógico | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
 | Escritura | Preescolar Rubio,N56 | Técnicas Rubio | 05/05/2022 |
 | Pensamiento Numérico | Aprender y Enseñar eneducación infantil | Graó | 05/05/2022 |
@@ -130,7 +129,7 @@ __Seccion:__
 | W |
 | V |
 
-En este momento la BBDD se encuentra en __2FN__, aunque ___hemos de tener en cuenta, que estamos perdiendo información, es decir, las relaciones entre las asignaturas, docentes, etc.___.
+En este momento la BBDD se encuentra en __2FN__, aunque ___hemos de tener en cuenta, que ___estamos perdiendo información, es decir, las relaciones entre las asignaturas, docentes, etc.____.
 
 3. __3FN__
 
@@ -138,23 +137,28 @@ Actualmente se cumple la __2FN__, y no existe transitividad en sus tablas.
 
 4. Realiza el Modelo Entidad Relacional con la solución obtenida.
     - Cosas a tener en cuenta:
-        - Una oficina puede tener una o más secciones.
-        - Un alumno puede tener una o más asignaturas.
-        - Una asignatura puede estar cursada por más de un alumno.
-        - Una asignatura tiene un docente.
-        - Un docente tiene una oficina, y una oficina sólo la tiene un docente.
+        - Un aula puede estar en más de un colegio.
+        - Un colegio tiene más de un aula.
+        - Un profesor puede tener en préstamo más de un Libro.
+        - Un libro puede ser prestato a más de un profesor.
+        - Un tiene más de un aula.
+        - Un aula puede estar en más de un curso.
 
 Teniendo esto en cuenta:
+
+__Relaciones:__
 
 <div align="center">
 <img src="img/matricula.drawio.png" width="400px"/>
 </div>
+
+__Modelo ER__:
 
 <div align="center">
 <img src="img/matricula-modelo.drawio.png" width="400px"/>
 </div>
 
 5. Realiza el Modelo Relacional con la solución obtenida. Será realizar la transformación del modelo __ER__ anterior.
+Con la información del __diagrama  ER__ resulta sencillo.
 
--->
 </div>
