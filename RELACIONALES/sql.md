@@ -1,4 +1,10 @@
+<div align="justify">
+
 # SQL
+
+<div align="center">
+<img src="img/sql.png" width="400px"/>
+</div>
 
 Para acceder y manipular la información en un **sistema de gestión de base de datos \(SGBD\)** se utiliza **SQL**.
 
@@ -219,3 +225,4 @@ Existen diferentes tipos de `JOIN`:
 
 Imágenes tomadas de [https://www.w3schools.com/sql/sql\_join.asp](https://www.w3schools.com/sql/sql_join.asp).
 
+</div>

@@ -1,3 +1,6 @@
+<div align="justify">
+
+
 # Bases de datos relacionales
 
 Las **bases de datos relacionales** se caracterizan por modelar la información en **tablas** que se relacionan entre sí.
@@ -131,3 +134,5 @@ Fíjate que en la tabla de **pedidos** no tenemos una referencia a los **ítems*
 
 **Nota:** El **modelamiento de base de datos** es una habilidad que requiere práctica y tiempo. Asegúrate **siempre** de validar tus modelos con tu mentor \(o alguien con experiencia\) antes de empezar a desarrollar tu aplicación, te va a ahorrar bastante tiempo más adelante.
 
+
+</div>

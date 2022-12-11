@@ -1,4 +1,12 @@
+
+
+<div align="justify">
+
 # MongoDB
+
+<div align="center">
+<img src="img/mongodb.png" width="400px"/>
+</div>
 
 [MongoDB](https://www.mongodb.com/) es quizá la base de datos **no relacional** más popular de la actualidad. Está diseñada para manejar grandes cantidades de datos distribuídos en varios servidores.
 
@@ -52,6 +60,10 @@ Veamos un ejemplo de un documento que representaría un post de un blog:
 ```
 
 Fíjate que los comentarios están incluidos en el documento. En una base de datos relacional tendríamos otra tabla para los comentarios, pero en MongoDB cada documento es independiente de los demás, así que es normal ver documentos con estructuras complejas como en este ejemplo.
+
+<div align="center">
+<img src="img/mongo_tupla.png" width="300px"/>
+</div>
 
 ## Instalación
 

@@ -1,4 +1,12 @@
+<div align="justify">
+
 # DDL
+
+<div align="center">
+<img src="img/ddlydml.png" width="500px"/>
+</div>
+
+
 
 **DDL** nos permite crear y definir la **estructura** que va a tener cada base de datos.
 
@@ -125,3 +133,4 @@ ALTER TABLE hotels DROP COLUMN address;
 ALTER TABLE hotels MODIFY address varchar(100) NOT NULL;
 ```
 
+</div>

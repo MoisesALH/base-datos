@@ -1,3 +1,11 @@
+<div align="justify">
+
+# Base de Datos
+
+<div align="center">
+<img src="img/bbdd-relacionales.png" width="500px"/>
+</div>
+
 # Bases de datos
 
 Una **base de datos** es una colección estructurada de datos, organizada para ser fácil de acceder y manipular.
@@ -35,3 +43,5 @@ Para MongoDB se recomiendan los siguientes temas:
 * [SQL](sql.md)
 * [DDL](ddl.md)
 * [MongoDB](mongodb.md)
+
+</div>
