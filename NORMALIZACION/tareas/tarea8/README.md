@@ -20,7 +20,11 @@
 | C.P Quevedo | Juan Méndez | Pensamiento Lógico | 2.B01 | 1er Grado | Saber educar: guía para Padres y Profesores | Temas de Hoy | 18/12/2022 |
 | C.P Quevedo | Juan Méndez | Pensamiento Numérico | 2.B01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 06/05/2022 |
 
-Dada la siguiente relación PRÉSTAMO (Colegio, Profesor,Asignatura, Aula, Curso, Libro, Editorial,Fecha_Préstamo) que contiene información relativa a los préstamos que realizan las editoriales a los profesores de primaria de los colegios para su evaluación en alguna de las asignaturas/habilidades que imparten. Se pide:
+Dada la siguiente relación PRÉSTAMO (Colegio, Profesor,Asignatura, Aula, Curso, Libro, Editorial,Fecha_Préstamo) que contiene información relativa a los préstamos que realizan las editoriales a los profesores de primaria de los colegios para su evaluación en alguna de las asignaturas/habilidades que imparten.
+
+> Considera las tuplas relación PRÉSTAMO mostradas en la tabla anterior, que a un profesor no se le puede prestar más de un libro de la misma editorial en el mismo día y que a un profesor no se le puede prestar más de una vez un mismo libro.
+
+Se pide:
 1. Realiza la normalización hasta la 3FN, indicando cada uno de los pasos (1, 2 y 3 FN).
 - 1FN.
 - 2FN.
@@ -37,7 +41,7 @@ __Solución__
  En este caso la tabla __NO__ se encuentra en __1FN__ dado que sus valores no son atómicos. Por ejemplo la columna __Profesor__ no es atómino, La primera aproximación a la solución, será hacer atómicos todos los valores de la tabla.
 
 | Colegio | Nombre Profesor | Apellido Profesor | Asignatura/ habilidad | Aula | Curso | Libro | Editorial | Fecha_prestamo |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----| 
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | C.P Cervantes | Juan | Pérez | Pensamiento Lógico | 1.A01  | 1er Grado  | Aprender y enseñar en educación infantil  |  Graó  | 09/09/2022 |
 | C.P Cervantes | Juan | Pérez | Escritura  |  1.A01  | 1er Grado Preescolar Rubio,N56 | Técnicas | Rubio | 05/05/2022 |
 | C.P Cervantes | Juan | Pérez | Pensamiento Numérico | 1.A01 | 1er Grado | Aprender y Enseñar eneducación infantil | Graó | 05/05/2022 |
