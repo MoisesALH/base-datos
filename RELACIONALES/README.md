@@ -40,6 +40,9 @@ Para MongoDB se recomiendan los siguientes temas:
 ## Contenido
 
 * [Bases de datos relacionales](bases-de-datos-relacionales.md)
+  - [Creación de Base de Datos](CreacionDB.md)
+  - [Exploración](Exploracion.md)
+  - [Base Chinook](BaseChinook.md)
 * [SQL](sql.md)
 * [DDL](ddl.md)
 * [MongoDB](mongodb.md)
