@@ -1,7 +1,7 @@
 <div align="justify">
 
 <div align="center">
-<img src="https://img2.rtve.es/i/?w=1600&i=1618740837832.jpg" width="400px"/>
+<img src="https://img2.rtve.es/i/?w=1600&i=1618740837832.jpg" width="200px"/>
 </div>
 
 El tipo de dato especifica el tipo de información que puede guardar un campo: caracteres, números, etc.

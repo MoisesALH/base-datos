@@ -1,7 +1,7 @@
 <div align="justify">
 
 <div align="center">
-<img src="https://luciamonterorodriguez.com/wp-content/uploads/2021/03/computer-1331579_640.png" width="400px"/>
+<img src="https://luciamonterorodriguez.com/wp-content/uploads/2021/03/computer-1331579_640.png" width="200px"/>
 </div>
 
 Vamos a crear un pequeña BBDD que contenga la información de __usuarios__.
