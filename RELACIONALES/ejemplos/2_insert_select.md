@@ -14,7 +14,7 @@ Vamos a seguir interactuando con nuesta base de datos de __usuarios__.
 Usamos __insert into__. Especificamos los nombres de los campos entre paréntesis y separados por comas y luego los valores para cada campo, también entre paréntesis y separados por comas.
 
 ````
-insert into usuarios (nombre, clave) values ('Pedro Perez','pedrito');
+insert into usuario (nombre, clave) values ('Pedro Perez','pedrito');
 ````
 
 Es importante ingresar los valores en el mismo orden en que se nombran los campos, si ingresamos los datos en otro orden, los datos se guardan de modo incorrecto.
