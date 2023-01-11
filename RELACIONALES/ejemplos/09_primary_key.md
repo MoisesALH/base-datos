@@ -65,9 +65,9 @@ Al campo "nombre" lo definimos "not null" para no permitir ingresar dicho valor.
 Ingresamos algunos registros:
 
 ``````
-insert into usuarios (nombre, clave)
+insert into usuario (nombre, clave)
   values ('juanperez','Boca');
-insert into usuarios (nombre, clave)
+insert into usuario (nombre, clave)
   values ('raulgarcia','River');
 ``````
 

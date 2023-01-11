@@ -16,7 +16,7 @@ Antes de crear una tabla debemos pensar en sus campos y optar por el tipo de dat
 _Por ejemplo, si en un campo almacenaremos números enteros, el tipo "real" sería una mala elección; si vamos a guardar precios, el tipo "real" es más adecuado, no así "integer" que no tiene decimales._
 
 ````
- create table libros(
+ create table libro(
 	titulo text,
 	autor text,
 	editorial text,

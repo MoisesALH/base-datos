@@ -23,7 +23,7 @@ Toda tabla debe ser definida con un nombre que la identifique y con el cual acce
 Creamos una tabla llamada "__usuario__", escribiendo:
 
 ````
-create table usuarios (
+create table usuario (
 	 nombre text,
 	 clave text
 );

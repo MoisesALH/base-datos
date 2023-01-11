@@ -4,7 +4,7 @@
 <img src="https://luciamonterorodriguez.com/wp-content/uploads/2021/03/computer-1331579_640.png" width="200px"/>
 </div>
 
-Vamos a seguir interactuando con nuesta base de datos de __usuarios__.
+Vamos a seguir interactuando con nuesta base de datos de __usuario__.
 > __Nota__. Para ello debes de  realizar la tarea anterior a esta.
 
 > __Recuerda__: Un registro es una fila de la tabla que contiene los datos propiamente dichos. Cada registro tiene un dato por cada columna.

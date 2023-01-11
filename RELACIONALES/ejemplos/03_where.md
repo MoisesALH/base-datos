@@ -20,7 +20,7 @@ Para la siguiente selección de registros especificamos una condición que solic
 
 `````
 select nombre,clave
-  from usuarios
+  from usuario
   where clave='test';
   `````
 
@@ -30,11 +30,9 @@ Sin embargo si ejecutamos la siguiente consulta debemos de obtener resultado:
 
 `````
 select nombre,clave
-  from usuarios
+  from usuario
   where clave='predrito';
   `````
  > __Aclaración__: Debemos de obtener al menos un elemento. 
-
-
 
 </div>
