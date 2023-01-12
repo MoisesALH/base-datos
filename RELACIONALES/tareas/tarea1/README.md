@@ -42,7 +42,7 @@ Se plantea la creación de una BBDD para una empresa de tecnología. Las necesid
 - Realiza la creación de la BBDD, creando las sentencias __sql__ necesarias.  
 - Realiza la inserción de los siguientes valores:
 
-  `````  
+  ```  
   insert into fabricante values(1,'Oracle','Estados Unidos');
   insert into fabricante values(2,'Microsoft','Estados Unidos');
   insert into fabricante values(3,'IBM','Estados Unidos');
@@ -131,7 +131,7 @@ Se plantea la creación de una BBDD para una empresa de tecnología. Las necesid
   insert into registra values(4,1,10,'Tarjeta postal');
   insert into registra values(5,2,12,'Internet');
   insert into registra values(2,4,15,'Internet');
-  `````
+  ```
 
 - Realiza las siguientes consultas:
   

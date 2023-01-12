@@ -10,11 +10,11 @@ Los operadores relacionales (o de comparación) nos permiten comparar dos expres
 
 Hemos aprendido a especificar condiciones de igualdad para seleccionar registros de una tabla; por ejemplo:
 
-``````
+```sql
 select nombre,clave
   from usuarios
   where clave='predrito';
-``````
+```
 
 > __Nota__.Utilizamos el operador relacional de igualdad.
 
@@ -33,18 +33,15 @@ Los operadores relacionales son los siguientes:
 
 A continuación vamos a añadir un nuevo elemento a la BBDD:
 
-``````
+```sql
 insert into usuario (nombre, clave) values ('Juan Perez','juanito');
-``````
+```
 Podemos seleccionar los registros cuya clave sea diferente de 'pedrito', para ello usamos la condición:
 
-```````
+```sql
 select nombre,clave
   from usuario
   where clave<>'pedrito';
-``````
-
-
-
+```
 
 </div>

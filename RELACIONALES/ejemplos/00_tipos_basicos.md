@@ -15,7 +15,7 @@ Estos son algunos tipos de datos básicos de SQLite:
 Antes de crear una tabla debemos pensar en sus campos y optar por el tipo de dato adecuado para cada uno de ellos.
 _Por ejemplo, si en un campo almacenaremos números enteros, el tipo "real" sería una mala elección; si vamos a guardar precios, el tipo "real" es más adecuado, no así "integer" que no tiene decimales._
 
-````
+```sql
  create table libro(
 	titulo text,
 	autor text,
@@ -23,6 +23,6 @@ _Por ejemplo, si en un campo almacenaremos números enteros, el tipo "real" ser�
 	precio real,
 	cantidad integer
  );
-````
+```
 
 </div>

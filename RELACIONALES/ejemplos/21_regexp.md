@@ -15,13 +15,13 @@ Existe toda una serie de reglas para crear las expresiones regulares que iremos 
 ### Problema resuelto
 #### Trabajar con la tabla __libro__.
 
-`````
+```sql
 drop table if exists libro;
-`````
+```
 
 Crear la tabla con la siguiente estructura:
 
-`````
+```sql
 create table libro(
   codigo integer primary key,
   titulo text,
@@ -29,11 +29,11 @@ create table libro(
   editorial text,
   precio real
 );
-`````
+```
 
 Insertar los siguientes registros:
 
-`````
+```sql
  insert into libro (titulo,autor,editorial,precio)
   values('El aleph','Borges','Planeta',15.50);
  insert into libro (titulo,autor,editorial,precio)
@@ -52,105 +52,106 @@ Insertar los siguientes registros:
   values('Harry Potter y la camara secreta','J.K. Rowling','Paidos',46.00);
  insert into libro (titulo,autor,editorial,precio)
   values('Alicia en el pais de las maravillas','Lewis Carroll','Paidos',36.00);  
-`````
+```
 
 Para buscar los títulos de los libros que contengan la cadena __Ma__ en cualquier parte usamos:
 
-`````
+```sql
  select titulo from libro
   where titulo regexp 'Ma';
-`````  
+```  
 
 Los libros que contienen esta subcadena son:
 
-`````
+```sql
 Martin Fierro
 El Manual de PHP
-`````
+```
+
 Para buscar los autores que tienen al menos una __H__ o una __k__ o una __w__ tipeamos:
 
-`````
+```sql
  select titulo,autor from libro
   where autor regexp '[Hkw]';  
-`````
+```
 
 Los autores que cumplen esta expresión regular son:
 
-`````
+```
 Jose Hernandez
 J.K. Rowling
 J.K. Rowling
 Lewis Carroll
-`````
+```
 
 Es sensible a mayúsculas y minúsculas.
 
 Para buscar los autores que no tienen ni __H__ o una __k__ o una __w__ tipeamos:
 
-`````
+```sql
  select autor from libro
   where autor not regexp '[Hkw]'; 
-````` 
+```
 
 Para buscar los autores que tienen por lo menos una de las letras de la __a__ hasta la __d__, es decir, __a,b,c,d__, usamos:
 
-`````
+```sql
  select autor from libro
   where autor regexp '[a-d]';  
-`````
+```
 
 Para ver los títulos que comienzan con __A__ tipeamos:
 
-`````
+```
  select titulo from libro
   where titulo regexp '^A';  
-`````
+```
 
 Para ver los títulos que terminan en __HP__ usamos:
 
-`````
+```
 select titulo from libro
   where titulo regexp 'HP$';  
-`````
+```
 
 Para buscar títulos que contengan una __a__ luego un caracter cualquiera y luego una __e__ utilizamos la siguiente sentencia:
 
-`````
+```
  select titulo from libro
   where titulo regexp 'a.e';
-`````
+```
 
 El punto (.) identifica cualquier caracter.
 
 Podemos mostrar los títulos que contienen una __a__ seguida de 2 caracteres y luego una __e__:
 
-`````
+```
 select titulo from libro
   where titulo regexp 'a..e';  
-`````
+```
 
 Para buscar autores que tengan 6 caracteres exactamente usamos:
 
-`````
+```
  select autor from libro
   where autor regexp '^......$';
-`````
+```
 
 Para buscar autores que tengan al menos 6 caracteres usamos:
 
-`````
+```
  select autor from libro
   where autor regexp '......';
-`````
+```
 
 Cuando tenemos que buscar en el string alguno de los caracteres que tienen un significado especial en las expresiones regulares '^ $. * +? =! : | \ / () [] {} ' debemos escaparlos dentro de los corchetes.
 
-`````
+```
  insert into libro (titulo,autor,editorial,precio)
   values('Como ganar $ en esta vida','Rodriguez Pablo','Paidos',25.00);  
  select titulo from libro
   where titulo regexp '\$';
-`````   
+```   
 Si queremos buscar el caracter __$__ debemos anteceder el caracter de escape __\__.
 
 Ahora veremos que podemos inicializar luego que indicamos entre corchetes el patrón a buscar la cantidad de veces que puede repetirse este patrón.
@@ -158,12 +159,12 @@ Son útiles para controlar la cantidad de repeticiones del patrón definido.
 
 Se especifican luego del corchete donde definimos los caracteres permitidos. Verificar si el precio del libro tiene entre 3 y 6 dígitos:
 
-`````
+```
  insert into libro (titulo,autor,editorial,precio)
   values('Python','Charles Dierbach','Wiley',100.24);    
  select titulo, precio from libro
   where precio regexp '[0-9]{3,6}'; 
-`````
+```
 
 Este último registro insertado cumple que el precio tiene entre 3 y 6 dígitos la parte entera.
 </div>

@@ -19,10 +19,10 @@ El cambio afectará a todos los registros.
 Podemos modificar algunos registros, para ello debemos establecer condiciones de selección con la cláusula __"where"__.
 Por ejemplo, queremos cambiar el valor correspondiente a la clave de nuestro usuario llamado __"Federicolopez"__, queremos como nueva clave __"Boca"__, necesitamos una condición __"where"__ que afecte solamente a este registro:
 
-``````
+```sql
 update usuario set clave='Boca'
   where nombre='Federicolopez';
-``````
+```
 
 > __Nota__.Si SQLite no encuentra registros que cumplan con la condición del "where", no se modifica ninguno.
 
@@ -30,13 +30,11 @@ Las condiciones no son obligatorias, pero si omitimos la cláusula __"where"__, 
 
 También podemos actualizar varios campos en una sola instrucción:
 
-`````
+```sql
  update usuario set nombre='Marceloduarte', clave='Marce'
   where nombre='Marcelo';
-`````
+```
 
 Para ello colocamos __"update"__, el __nombre de la tabla__, __"set"__ junto al nombre del campo y el nuevo valor y separado por coma, el otro nombre del campo con su nuevo valor.
-
-
 
 </div>

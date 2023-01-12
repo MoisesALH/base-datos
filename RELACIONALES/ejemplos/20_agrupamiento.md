@@ -17,28 +17,28 @@ Las relaciones entre las funciones de agrupamiento y los tipos de datos es la si
 
 La función __sum()__ retorna la suma de los valores que contiene el campo especificado. Si queremos saber la cantidad total de libros que tenemos disponibles para la venta, debemos sumar todos los valores del campo __cantidad__:
 
-`````
+```sql
  select sum(cantidad)
   from libro;
-`````
+```
 
 Para averiguar el valor máximo o mínimo de un campo usamos las funciones __max()__ y __min()__ respectivamente.
 Queremos saber cuál es el mayor precio de todos los libros:
 
-`````
+```sql
  select max(precio)
   from libro;
-`````
+```
 
 Entonces, dentro del paréntesis de la función colocamos el nombre del campo del cuál queremos el máximo valor.
 
 La función __avg()__ retorna el valor promedio de los valores del campo especificado. Queremos saber el promedio del precio de los libros referentes a __PHP__:
 
-`````
+```sql
  select avg(precio)
   from libro
   where titulo like '%PHP%';
-`````
+```
 
 Ahora podemos entender porque estas funciones se denominan __funciones de agrupamiento__, porque operan sobre conjuntos de registros, no con datos individuales.
 

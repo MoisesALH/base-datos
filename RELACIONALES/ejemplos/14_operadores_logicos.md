@@ -17,21 +17,21 @@ Los operadores lógicos se usan para combinar condiciones.
 
 Queremos recuperar todos los registros cuyo autor sea igual a "Borges" y cuyo precio no supere los 20 pesos, para ello necesitamos 2 condiciones:
 
-`````
+```sql
 select * from libro
   where autor='Borges' and
         precio<=20;  
-`````
+```
 
 Los registros recuperados en una sentencia que une 2 condiciones con el operador "and", cumplen con las 2 condiciones.
 
 Queremos ver los libros cuyo autor sea "Borges" y/o cuya editorial sea "Planeta":
 
-`````
+```sql
 select * from libro
   where autor='Borges' or
         editorial='Planeta';    
-`````
+```
 
 En la sentencia anterior usamos el operador "or", indicamos que recupere los libros en los cuales el valor del campo "autor" sea "Borges" y/o el valor del campo "editorial" sea "Planeta", es decir, seleccionará los registros que cumplan con la primera condición, con la segunda condición o con ambas condiciones.
 
@@ -39,10 +39,10 @@ Los registros recuperados con una sentencia que une 2 condiciones con el operado
 
 Queremos recuperar los libros que no cumplan la condición dada, por ejemplo, aquellos cuya editorial NO sea "Planeta":
 
-`````
+```sql
 select * from libro
   where not editorial='Planeta';
-`````
+```
 
 El operador "not" invierte el resultado de la condición a la cual antecede.
 
@@ -54,19 +54,19 @@ Cuando explicitamos varias condiciones con diferentes operadores lógicos (combi
 
 Por ejemplo, las siguientes expresiones devuelven un resultado diferente:
 
-`````
+```sql
 select * from libro
   where (autor='Borges') or
         (editorial='Paidos' and precio<20);  
-`````
+```
 
 Otro ejemplo:
 
-`````
+```sql
 select * from libro
   where (autor='Borges' or editorial='Paidos') and
         (precio<20);  
-`````
+```
           
 Si bien los paréntesis no son obligatorios en todos los casos, se recomienda utilizarlos para evitar confusiones.
 

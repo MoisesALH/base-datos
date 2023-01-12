@@ -60,7 +60,7 @@ Una ves identificada la tabla podemos revisar su contenido, para esto usaremos l
 **librosDB**:
 
 ```sql
-SELECT * FROM libros;
+SELECT * FROM libro;
 ```
 
 Revisando cada parte tenemos:
@@ -79,7 +79,7 @@ Estas columnas pueden extraerse por su nombre, sustituyendo el asterisco por los
 comas.
 
 ```sql
-SELECT Autor, Editorial FROM libros;
+SELECT Autor, Editorial FROM libro;
 ```
 
 Por lo tanto se pueden seleccionar cualquier combinación de columnas para extraer la información que contienen.

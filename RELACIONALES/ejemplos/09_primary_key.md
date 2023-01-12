@@ -18,21 +18,23 @@ Podemos establecer que un campo sea clave primaria al momento de crear la tabla 
 Tenemos nuestra tabla "usuario" definida con 2 campos ("nombre" y "clave").
 La sintaxis básica y general es la siguiente:
 
-`````
+```sql
 create table NOMBRETABLA(
   CAMPO TIPO not null,
   ...
   primary key (NOMBRECAMPO)
  );
- `````
+ ```
+
 El códido de definición de la tabla será el siguiente:
-`````
+
+```sql
 create table usuario(
         nombre text not null,
         clave text,
         primary key(nombre)
 );
-`````
+```
 
 o que hacemos agregar luego de la definición de cada campo, "primary key" y entre paréntesis, el nombre del campo que será clave primaria.
 
@@ -45,38 +47,39 @@ Igualmente, si realizamos una actualización, SQLite controla que los valores pa
 
 Vamos a realizar las siguientes acciones:
 
-``````
+```sql
 drop table if exists usuario;
-```````
+```
 
 Eliminando la tabla de la base de datos.
 
 Creamos la tabla definiendo el campo "nombre" como clave primaria:
 
-``````
+```sql
 create table usuario(
 	nombre text not null,
 	clave text,
         primary key(nombre)
 );
-``````
+```
+
 Al campo "nombre" lo definimos "not null" para no permitir ingresar dicho valor.
 
 Ingresamos algunos registros:
 
-``````
+```sql
 insert into usuario (nombre, clave)
   values ('juanperez','Boca');
 insert into usuario (nombre, clave)
   values ('raulgarcia','River');
-``````
+```
 
 > __Nota__. Recordemos que cuando un campo es clave primaria, sus valores no se repiten. Intentamos ingresar un valor de clave primaria existente:
 
-``````
+```sql
 insert into usuarios (nombre, clave)
   values ('juanperez','payaso');
-  ``````
+```
 
 > __Nota__. ¿Qué mensaje estas recibiendo?
 
@@ -86,13 +89,13 @@ Recordemos que una clave primaria identifica 1 solo registro en una tabla. Para 
 
 Un club imparte clases de distintos deportes. En una tabla llamada __inscrito__ almacena la información necesaria.
 
-`````
+```sql
 drop table if exists inscrito;
-`````
+```
 
 La información a almacenar es la siguiente:
 
-`````
+```sql
  create table inscrito(
   documento text, 
   deporte text,  
@@ -101,78 +104,73 @@ La información a almacenar es la siguiente:
   matricula text,
   primary key(documento,deporte,año)
  );
-`````
+```
 
 Necesitamos una clave primaria que identifique cada registro. Un socio puede inscribirse en varios deportes en distintos años. Un socio no puede inscribirse en el mismo deporte el mismo año. Varios socios se inscriben en un mismo deporte en distintos años.
 
 Inscriba a varios alumnos en el mismo deporte en el mismo año:
 
-`````
+```sql
  insert into inscrito( documento, nombre, deporte, año, matricula)
   values ('12222222','Juan Perez','tenis',2022,'s');
  insert into inscrito( documento, nombre, deporte, año, matricula)
   values ('23333333','Marta Garcia','tenis',2022,'s');
  insert into inscrito( documento, nombre, deporte, año, matricula)
   values ('34444444','Luis Perez','tenis',2022,'n');
-`````
+```
 
 Inscriba a un mismo alumno en varios deportes en el mismo año:
-`````
+
+```sql
  insert into inscrito( documento, deporte, año, nombre, matricula)
   values ('12222222','Juan Perez','futbol','2022','s');
  insert into inscrito( documento, deporte, año, nombre, matricula)
   values ('12222222','Juan Perez','natacion','2022','s');
  insert into inscrito( documento, deporte, año, nombre, matricula)
   values ('12222222','Juan Perez','basquet','2022','n');
-`````
+```
 
 Ingrese un registro con el mismo documento de socio en el mismo deporte en distintos años:
 
-`````
+```sql
  insert into inscrito( documento, nombre, deporte, año, matricula)
   values ('12222222','Juan Perez','tenis',2006,'s');
  insert into inscrito( documento, nombre, deporte, año, matricula)
   values ('12222222','Juan Perez','tenis',2007,'s'); 
-`````
+```
 
 Intente inscribir a un socio alumno en un deporte en el cual ya esté inscripto.
 
-`````
+```sql
  insert into inscrito( documento, nombre, deporte, año, matricula)
   values ('12222222','Juan Perez','tenis',2022,'s');
-`````
+```
 
 Se genera un error:
 
-`````
+```sql
 UNIQUE constraint failed: inscrito.documento, inscrito.deporte, inscrito.año:  
-`````
-`````
  insert into inscrito( documento, nombre, deporte, año, matricula)
   values ('12222222','Juan Perez','tenis',2022,'s');
-`````
+```
 
 Intente actualizar un registro para que la clave primaria se repita:
 
-`````
+```sql
  update inscrito set deporte='tenis'
   where documento='12222222' and
   deporte='futbol' and
   año=2022;
-`````
+```
 
 También se genera un error:
 
-`````
+```sql
 UNIQUE constraint failed: inscrito.documento, inscrito.deporte, inscrito.año:  
-`````
-
-`````
- update inscrito set deporte='tenis'
+update inscrito set deporte='tenis'
   where documento='12222222' and
   deporte='futbol' and
   año=2022;
-`````
-
+```
 
 </div>

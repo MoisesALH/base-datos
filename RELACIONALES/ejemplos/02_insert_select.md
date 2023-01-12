@@ -13,9 +13,9 @@ Vamos a seguir interactuando con nuesta base de datos de __usuario__.
 
 Usamos __insert into__. Especificamos los nombres de los campos entre paréntesis y separados por comas y luego los valores para cada campo, también entre paréntesis y separados por comas.
 
-````
+```sql
 insert into usuario (nombre, clave) values ('Pedro Perez','pedrito');
-````
+```
 
 Es importante ingresar los valores en el mismo orden en que se nombran los campos, si ingresamos los datos en otro orden, los datos se guardan de modo incorrecto.
 
@@ -23,12 +23,12 @@ Note que los datos ingresados, como corresponden a campos de cadenas de caracter
 
 Para ver los registros de una tabla usamos __select__:
 
-```
+```sql
 select nombre,clave from usuario;
 ```
 __ó__
 
-```
+```sql
 select * from usuario;
 ```
 

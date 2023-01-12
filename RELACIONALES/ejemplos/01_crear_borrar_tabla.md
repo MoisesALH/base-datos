@@ -22,12 +22,12 @@ Toda tabla debe ser definida con un nombre que la identifique y con el cual acce
 
 Creamos una tabla llamada "__usuario__", escribiendo:
 
-````
+```sql
 create table usuario (
 	 nombre text,
 	 clave text
 );
-````
+```
 Para borrar la tabla de la base de datos debemos de ejecutar el siguiente comando:
 
 ```
