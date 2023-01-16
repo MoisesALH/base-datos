@@ -477,7 +477,10 @@ __Se debe de realizar:__
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
+        
         ```sql
+        select dni from cliente; 
+
         ```
       </details> 
   2. Consulta todos los datos de todos los programas. 
@@ -485,6 +488,7 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select * from programa;
         ```
       </details>
   3. Obtén un listado con los nombres de todos los programas.
@@ -492,6 +496,7 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select nombre from programa;
         ```
       </details>
   4. Genera una lista con todos los comercios.
@@ -499,6 +504,7 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select nombre from comercio;
         ```
       </details> 
   5. Genera una lista de las ciudades con establecimientos donde se venden programas, sin que aparezcan valores duplicados (utiliza DISTINCT). 
@@ -506,21 +512,39 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select DISTINCT ciudad from comercio;
         ```
       </details>
-  6. Obtén una lista con los nombres de programas, sin que aparezcan valores duplicados (utiliza DISTINCT). 
+  6. Obtén una lista con los nombres de programas, sin que aparezcan valores duplicados (utiliza DISTINCT).
+      <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        select DISTINCT nombre from programa;
+        ```
+      </details> 
   7. Obtén el DNI más 4 de todos los clientes.
         <details>
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select dni+4 from cliente;
         ```
       </details> 
-  8. Haz un listado con los códigos de los programas multiplicados por 7. 9 ¿Cuáles son los programas cuyo código es inferior o igual a 10? 
+  8. Haz un listado con los códigos de los programas multiplicados por 7.
+          <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        select codigo*7 from programa;
+        ```
+      </details>
+  9. ¿Cuáles son los programas cuyo código es inferior o igual a 10? 
         <details>
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select codigo from programa WHERE codigo  <= 10;
         ```
       </details>
   10. ¿Cuál es el programa cuyo código es 11?
@@ -528,6 +552,7 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select * from programa WHERE codigo  = 11;
         ```
       </details>
   11. ¿Qué fabricantes son de Estados Unidos?
@@ -535,6 +560,7 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select * from fabricante where pais ='Estados Unidos';
         ```
       </details> 
   12. ¿Cuáles son los fabricantes no españoles? Utilizar el operador IN.
@@ -542,6 +568,7 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select * from fabricante where pais not in ('España');
         ```
       </details> 
   13. Obtén un listado con los códigos de las distintas versiones de Windows.
@@ -549,6 +576,7 @@ __Se debe de realizar:__
             <summary>SOLUCIÓN</summary>
             </br>
             ```sql
+            select * from programa where nombre='Windows';
             ```
       </details> 
   14. ¿En qué ciudades comercializa programas El Corte Inglés?
@@ -556,6 +584,7 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
           </br>
             ```sql
+            SELECT * from comercio where nombre ='El Corte Inglés';
             ```
       </details> 
   15. ¿Qué otros comercios hay, además de El Corte Inglés? Utilizar el operador IN.
@@ -563,6 +592,7 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        SELECT * from comercio where nombre not in ('El Corte Inglés');
         ```
       </details>  
   16. Genera una lista con los códigos de las distintas versiones de Windows y Access. Utilizar el operador IN.
@@ -570,6 +600,7 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select DISTINCT codigo FROM programa where nombre in ('Windows', 'Access');
         ```
       </details>  
   17. Obtén un listado que incluya los nombres de los clientes de edades comprendidas entre 10 y 25 y de los mayores de 50 años. Da una solución con BETWEEN y otra sin BETWEEN.
@@ -577,6 +608,9 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
         ```sql
+        select nombre from cliente where ((edad >10 and edad<=25) or edad >= 50)
+
+        select nombre from cliente where  ( (edad BETWEEN 10 and 25) or edad >= 50);
         ```
       </details> 
   18. Saca un listado con los comercios de Sevilla y Madrid. No se admiten valores duplicados.
