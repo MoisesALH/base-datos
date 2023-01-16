@@ -8,36 +8,40 @@
 Se plantea la creación de una BBDD para una empresa de tecnología. Las necesidades se describen en la siguiente guía de tablas de la BBDD.
 
 - tabla fabricante:
-  - id_fab:entero (clave primaria);
+  - id_fab:entero;
   - nombre:texto;
   - pais:texto;
+  > clave primaria(id_fab);
 - tabla programa:
-  - codigo:entero (clave primaria),
+  - codigo:entero,
   - nombre:texto;
   - version:texto;
+  > clave primaria(codigo);
 - tabla comercio:
-  - cif:entero (clave primaria),
+  - cif:entero,
   - nombre:texto,
   - ciudad:texto);
+  > clave primaria(cif);
 - tabla cliente:
-  - dni:entero (clave primaria),
+  - dni:entero,
   - nombre:texto,
   - edad:entero;
+  > clave primaria(dni);
 - tabla desarrolla:
   - id_fab entero:
   - codigo entero:
-    - (clave primaria)(id_fab,codigo);
+  > clave primaria(id_fab,codigo);
 - tabla distribuye:
   - cif entero:
   - codigo entero:
   - cantidad entero,
-    - (clave primaria)(cif,codigo);
+  > clave primaria(cif,codigo);
 - tabla registra:
   - cif entero:
   - dni entero:
   - codigo entero:
   - medio texto:
-    - (clave primaria)(cif,dni);
+  > clave primaria(cif,dni);
 
 - Realiza la creación de la BBDD, creando las sentencias __sql__ necesarias.  
 - Realiza la inserción de los siguientes valores:
@@ -135,60 +139,371 @@ Se plantea la creación de una BBDD para una empresa de tecnología. Las necesid
 
 - Realiza las siguientes consultas:
   
-  - 1. Averigua el DNI de todos los clientes. 
-  - 2. Consulta todos los datos de todos los programas. 
-  - 3. Obtén un listado con los nombres de todos los programas. 
-  - 4. Genera una lista con todos los comercios. 
-  - 5. Genera una lista de las ciudades con establecimientos donde se venden programas, sin que aparezcan valores duplicados (utiliza DISTINCT). 
-  - 6. Obtén una lista con los nombres de programas, sin que aparezcan valores duplicados (utiliza DISTINCT). 
-  - 7. Obtén el DNI más 4 de todos los clientes.  
-  - 8. Haz un listado con los códigos de los programas multiplicados por 7. 9 ¿Cuáles son los programas cuyo código es inferior o igual a 10? 
-  - 10. ¿Cuál es el programa cuyo código es 11? 
-  - 11. ¿Qué fabricantes son de Estados Unidos? 
-  - 12. ¿Cuáles son los fabricantes no españoles? Utilizar el operador IN. 
-  - 13. Obtén un listado con los códigos de las distintas versiones de Windows. 
-  - 14. ¿En qué ciudades comercializa programas El Corte Inglés? 
-  - 15. ¿Qué otros comercios hay, además de El Corte Inglés? Utilizar el operador IN. 
-  - 16. Genera una lista con los códigos de las distintas versiones de Windows y Access. Utilizar el operador IN. 
-  - 17. Obtén un listado que incluya los nombres de los clientes de edades comprendidas entre 10 y 25 y de los mayores de 50 años. Da una solución con BETWEEN y otra sin BETWEEN.
-  - 18. Saca un listado con los comercios de Sevilla y Madrid. No se admiten valores duplicados. 
-  - 19. ¿Qué clientes terminan su nombre en la letra “o”? 
-  - 20. ¿Qué clientes terminan su nombre en la letra “o” y, además, son mayores de 30 años? 
-  - 21. Obtén un listado en el que aparezcan los programas cuya versión finalice por una letra i, o cuyo nombre comience por una A o por una W. 
-  - 22. Obtén un listado en el que aparezcan los programas cuya versión finalice por una letra i, o cuyo nombre comience por una A y termine por una S. 
-  - 23. Obtén un listado en el que aparezcan los programas cuya versión finalice por una letra i, y cuyo nombre no comience por una A. 
-  - 24. Obtén una lista de empresas por orden alfabético ascendente. 
-  - 25. Genera un listado de empresas por orden alfabético descendente. 
-  - 26. Obtén un listado de programas por orden de versión.
-  - 27. Genera un listado de los programas que desarrolla Oracle. 
-  - 28. ¿Qué comercios distribuyen Windows? 
-  - 29. Genera un listado de los programas y cantidades que se han distribuido a El Corte Inglés de Madrid. 
-  - 30. ¿Qué fabricante ha desarrollado Freddy Hardest? 
-  - 31. Selecciona el nombre de los programas que se registran por Internet. 
-  - 32. ¿Qué medios ha utilizado para registrarse Pepe Pérez? 
-  - 33. ¿Qué usuarios han optado por Internet como medio de registro? 
-  - 34. ¿Qué programas han recibido registros por tarjeta postal? 
-  - 35. ¿En qué localidades se han vendido productos que se han registrado por Internet? 
-  - 36. Obtén un listado de los nombres de las personas que se han registrado por Internet, junto al nombre de los programas para los que ha efectuado el registro. 
-  - 37. Genera un listado en el que aparezca cada cliente junto al programa que ha registrado, el medio con el que lo ha hecho y el comercio en el que lo ha adquirido.
-  - 38. Genera un listado con las ciudades en las que se pueden obtener los productos de Oracle. 
-  - 39. Obtén el nombre de los usuarios que han registrado Access XP. 
-  - 40. Nombre de aquellos fabricantes cuyo país es el mismo que ʻOracleʼ. (Subconsulta). 
-  - 41. Nombre de aquellos clientes que tienen la misma edad que Pepe Pérez. (Subconsulta). 
-  - 42. Genera un listado con los comercios que tienen su sede en la misma ciudad que tiene el comercio ʻFNACʼ. (Subconsulta). 
-  - 43. Nombre de aquellos clientes que han registrado un producto de la misma forma que el cliente ʻPepe Pérezʼ. (Subconsulta). 
-  - 44. Obtener el número de programas que hay en la tabla programas. 46 Calcula el número de clientes cuya edad es mayor de 40 años. 
-  - 45. Calcula el número de productos que ha vendido el establecimiento cuyo CIF es 1. 
-  - 46. Calcula la media de programas que se venden cuyo código es 7.  
-  - 47. Calcula la mínima cantidad de programas de código 7 que se ha vendido 
-  - 48. Calcula la máxima cantidad de programas de código 7 que se ha vendido.
-  - 49. ¿En cuántos establecimientos se vende el programa cuyo código es 7? 
-  - 50. Calcular el número de registros que se han realizado por Internet.  
-  - 51. Obtener el número total de programas que se han vendido en ʻSevillaʼ. 
-  - 52. Calcular el número total de programas que han desarrollado los fabricantes cuyo país es ʻEstados Unidosʼ. 
-  - 53. Visualiza el nombre de todos los clientes en mayúscula. En el resultado de la consulta debe aparecer también la longitud de la cadena nombre. 
-  - 54. Con una consulta concatena los campos nombre y versión de la tabla PROGRAMA.   
-
+  1. Averigua el DNI de todos los clientes.
+      <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details> 
+  2. Consulta todos los datos de todos los programas. 
+        <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details>
+  3. Obtén un listado con los nombres de todos los programas.
+        <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details>
+  4. Genera una lista con todos los comercios.
+        <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details> 
+  5. Genera una lista de las ciudades con establecimientos donde se venden programas, sin que aparezcan valores duplicados (utiliza DISTINCT). 
+        <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details>
+  6. Obtén una lista con los nombres de programas, sin que aparezcan valores duplicados (utiliza DISTINCT). 
+  7. Obtén el DNI más 4 de todos los clientes.
+        <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details> 
+  8. Haz un listado con los códigos de los programas multiplicados por 7. 9 ¿Cuáles son los programas cuyo código es inferior o igual a 10? 
+        <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details>
+  10. ¿Cuál es el programa cuyo código es 11?
+        <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details>
+  11. ¿Qué fabricantes son de Estados Unidos?
+        <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details> 
+  12. ¿Cuáles son los fabricantes no españoles? Utilizar el operador IN.
+        <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details> 
+  13. Obtén un listado con los códigos de las distintas versiones de Windows.
+        <details>
+            <summary>SOLUCIÓN</summary>
+            </br>
+            ```sql
+            ```
+      </details> 
+  14. ¿En qué ciudades comercializa programas El Corte Inglés?
+      <details>
+        <summary>SOLUCIÓN</summary>
+          </br>
+            ```sql
+            ```
+      </details> 
+  15. ¿Qué otros comercios hay, además de El Corte Inglés? Utilizar el operador IN.
+      <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details>  
+  16. Genera una lista con los códigos de las distintas versiones de Windows y Access. Utilizar el operador IN.
+      <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details>  
+  17. Obtén un listado que incluya los nombres de los clientes de edades comprendidas entre 10 y 25 y de los mayores de 50 años. Da una solución con BETWEEN y otra sin BETWEEN.
+      <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details> 
+  18. Saca un listado con los comercios de Sevilla y Madrid. No se admiten valores duplicados.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  19. ¿Qué clientes terminan su nombre en la letra “o”?
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  20. ¿Qué clientes terminan su nombre en la letra “o” y, además, son mayores de 30 años?
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  21. Obtén un listado en el que aparezcan los programas cuya versión finalice por una letra i, o cuyo nombre comience por una A o por una W.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  22. Obtén un listado en el que aparezcan los programas cuya versión finalice por una letra i, o cuyo nombre comience por una A y termine por una S.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  23. Obtén un listado en el que aparezcan los programas cuya versión finalice por una letra i, y cuyo nombre no comience por una A.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  24. Obtén una lista de empresas por orden alfabético ascendente.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  25. Genera un listado de empresas por orden alfabético descendente.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  26. Obtén un listado de programas por orden de versión.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  27. Genera un listado de los programas que desarrolla Oracle.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  28. ¿Qué comercios distribuyen Windows?
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  29. Genera un listado de los programas y cantidades que se han distribuido a El Corte Inglés de Madrid.
+      <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        ```sql
+        ```
+      </details> 
+  30. ¿Qué fabricante ha desarrollado Freddy Hardest?
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details>  
+  31. Selecciona el nombre de los programas que se registran por Internet.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  32. ¿Qué medios ha utilizado para registrarse Pepe Pérez?
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details>  
+  33. ¿Qué usuarios han optado por Internet como medio de registro?
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  34. ¿Qué programas han recibido registros por tarjeta postal?
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  35. ¿En qué localidades se han vendido productos que se han registrado por Internet?
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  36. Obtén un listado de los nombres de las personas que se han registrado por Internet, junto al nombre de los programas para los que ha efectuado el registro.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  37. Genera un listado en el que aparezca cada cliente junto al programa que ha registrado, el medio con el que lo ha hecho y el comercio en el que lo ha adquirido.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  38. Genera un listado con las ciudades en las que se pueden obtener los productos de Oracle.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  39. Obtén el nombre de los usuarios que han registrado Access XP.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  40. Nombre de aquellos fabricantes cuyo país es el mismo que ʻOracleʼ. (Subconsulta).
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details>  
+  41. Nombre de aquellos clientes que tienen la misma edad que Pepe Pérez. (Subconsulta).
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  42. Genera un listado con los comercios que tienen su sede en la misma ciudad que tiene el comercio ʻFNACʼ. (Subconsulta).
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details>  
+  43. Nombre de aquellos clientes que han registrado un producto de la misma forma que el cliente ʻPepe Pérezʼ. (Subconsulta).
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  44. Obtener el número de programas que hay en la tabla programas. 46 Calcula el número de clientes cuya edad es mayor de 40 años.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  45. Calcula el número de productos que ha vendido el establecimiento cuyo CIF es 1.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details>  
+  46. Calcula la media de programas que se venden cuyo código es 7.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details>   
+  47. Calcula la mínima cantidad de programas de código 7 que se ha vendido.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  48. Calcula la máxima cantidad de programas de código 7 que se ha vendido.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  49. ¿En cuántos establecimientos se vende el programa cuyo código es 7?
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  50. Calcular el número de registros que se han realizado por Internet.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details>  
+  51. Obtener el número total de programas que se han vendido en ʻSevillaʼ.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  52. Calcular el número total de programas que han desarrollado los fabricantes cuyo país es ʻEstados Unidosʼ.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
+  53. Visualiza el nombre de todos los clientes en mayúscula. En el resultado de la consulta debe aparecer también la longitud de la cadena nombre.
+      <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details>  
+  54. Con una consulta concatena los campos nombre y versión de la tabla PROGRAMA.   
+    <details>
+      <summary>SOLUCIÓN</summary>
+      </br>
+      ```sql
+      ```
+      </details> 
 __Se debe de realizar:__
  - La __creación de cada una de las tablas__ e indicar la __sentencia sql__ utilizada, además de la salida obtenida.
 - Realizar la __inserción de los datos__.
