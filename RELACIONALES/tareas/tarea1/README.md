@@ -270,7 +270,6 @@ __Se debe de realizar:__
         ```sql
         create table programa(
             codigo integer,
-            clave text,
             nombre text,
             version text,
             primary key(codigo)
