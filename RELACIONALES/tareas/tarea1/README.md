@@ -860,9 +860,19 @@ __Se debe de realizar:__
         <summary>SOLUCIÓN</summary>
         </br>
           ```sql
+          SELECT DISTINCT cliente.nombre FROM cliente, registra WHERE cliente.dni = registra.dni AND medio IN (SELECT DISTINCT medio FROM cliente, registra WHERE cliente.dni = registra.dni AND cliente.nombre = 'Pepe Pérez' ) ;
           ```
       </details> 
-  44. Obtener el número de programas que hay en la tabla programas. 46 Calcula el número de clientes cuya edad es mayor de 40 años.
+  44. Obtener el número de programas que hay en la tabla programas.
+      <details>
+        <summary>SOLUCIÓN</summary>
+        </br>
+        
+        ```sql
+        ```
+
+      </details>
+  45. Calcula el número de clientes cuya edad es mayor de 40 años.
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -871,7 +881,7 @@ __Se debe de realizar:__
         ```
 
       </details> 
-  45. Calcula el número de productos que ha vendido el establecimiento cuyo CIF es 1.
+  46. Calcula el número de productos que ha vendido el establecimiento cuyo CIF es 1.
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -880,7 +890,7 @@ __Se debe de realizar:__
         ```
 
       </details>  
-  46. Calcula la media de programas que se venden cuyo código es 7.
+  47. Calcula la media de programas que se venden cuyo código es 7.
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -889,7 +899,7 @@ __Se debe de realizar:__
         ```
 
       </details>   
-  47. Calcula la mínima cantidad de programas de código 7 que se ha vendido.
+  48. Calcula la mínima cantidad de programas de código 7 que se ha vendido.
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -898,7 +908,7 @@ __Se debe de realizar:__
         ```
 
       </details> 
-  48. Calcula la máxima cantidad de programas de código 7 que se ha vendido.
+  49. Calcula la máxima cantidad de programas de código 7 que se ha vendido.
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -907,7 +917,7 @@ __Se debe de realizar:__
         ```
 
       </details> 
-  49. ¿En cuántos establecimientos se vende el programa cuyo código es 7?
+  50. ¿En cuántos establecimientos se vende el programa cuyo código es 7?
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -916,7 +926,7 @@ __Se debe de realizar:__
         ```
 
       </details> 
-  50. Calcular el número de registros que se han realizado por Internet.
+  51. Calcular el número de registros que se han realizado por Internet.
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -925,7 +935,7 @@ __Se debe de realizar:__
         ```
 
       </details>  
-  51. Obtener el número total de programas que se han vendido en ʻSevillaʼ.
+  52. Obtener el número total de programas que se han vendido en ʻSevillaʼ.
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -934,7 +944,7 @@ __Se debe de realizar:__
         ```
 
       </details> 
-  52. Calcular el número total de programas que han desarrollado los fabricantes cuyo país es ʻEstados Unidosʼ.
+  53. Calcular el número total de programas que han desarrollado los fabricantes cuyo país es ʻEstados Unidosʼ.
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -943,7 +953,7 @@ __Se debe de realizar:__
         ```
 
       </details> 
-  53. Visualiza el nombre de todos los clientes en mayúscula. En el resultado de la consulta debe aparecer también la longitud de la cadena nombre.
+  54. Visualiza el nombre de todos los clientes en mayúscula. En el resultado de la consulta debe aparecer también la longitud de la cadena nombre.
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
@@ -952,7 +962,7 @@ __Se debe de realizar:__
         ```
 
       </details>  
-  54. Con una consulta concatena los campos nombre y versión de la tabla PROGRAMA.   
+  55. Con una consulta concatena los campos nombre y versión de la tabla PROGRAMA.   
       <details>
         <summary>SOLUCIÓN</summary>
         </br>
