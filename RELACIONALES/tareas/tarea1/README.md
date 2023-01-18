@@ -551,67 +551,62 @@ __Se debe de realizar:__
 
       </details> 
   13. Obtén un listado con los códigos de las distintas versiones de Windows.
-    <details>
-        <summary>SOLUCIÓN</summary>
-        </br>
-        
-        ```sql
-        select * from programa where nombre='Windows';
-        ```
-
-  </details> 
+        <details>
+            <summary>SOLUCIÓN</summary>
+            </br>
+            
+            ```sql
+            select * from programa where nombre='Windows';
+            ```
+      </details> 
   14. ¿En qué ciudades comercializa programas El Corte Inglés?
-    <details>
-      <summary>SOLUCIÓN</summary>
+        <details>
+        <summary>SOLUCIÓN</summary>
         </br>
           
           ```sql
           SELECT * from comercio where nombre ='El Corte Inglés';
           ```
-
-    </details> 
+      </details> 
   15. ¿Qué otros comercios hay, además de El Corte Inglés? Utilizar el operador IN.
-    <details>
-      <summary>SOLUCIÓN</summary>
-      </br>
-      
-      ```sql
-      SELECT * from comercio where nombre not in ('El Corte Inglés');
-      ```
-    
-  </details>  
+        <details>
+          <summary>SOLUCIÓN</summary>
+          </br>
+          
+          ```sql
+          SELECT * from comercio where nombre not in ('El Corte Inglés');
+          ```
+        </details>  
   16. Genera una lista con los códigos de las distintas versiones de Windows y Access. Utilizar el operador IN.
-      <details>
-        <summary>SOLUCIÓN</summary>
-        </br>
-        
-        ```sql
-        select DISTINCT codigo FROM programa where nombre in ('Windows', 'Access');
-        ```
-      
-      </details>  
+        <details>
+          <summary>SOLUCIÓN</summary>
+          </br>
+          
+          ```sql
+          select DISTINCT codigo FROM programa where nombre in ('Windows', 'Access');
+          ```
+        </details>  
   17. Obtén un listado que incluya los nombres de los clientes de edades comprendidas entre 10 y 25 y de los mayores de 50 años. Da una solución con BETWEEN y otra sin BETWEEN.
-      <details>
-        <summary>SOLUCIÓN</summary>
-        </br>
-      
-        ```sql
-        select nombre from cliente where ((edad >10 and edad<=25) or edad >= 50)
-
-        select nombre from cliente where  ( (edad BETWEEN 10 and 25) or edad >= 50);
-        ```
-
-      </details> 
-  18. Saca un listado con los comercios de Sevilla y Madrid. No se admiten valores duplicados.
-      <details>
-        <summary>SOLUCIÓN</summary>
-        </br>
+        <details>
+          <summary>SOLUCIÓN</summary>
+          </br>
         
-        ```sql
-        select DISTINCT nombre from comercio where ciudad in ('Sevilla', 'Madrid');
-        ```
+          ```sql
+          select nombre from cliente where ((edad >10 and edad<=25) or edad >= 50)
 
-      </details> 
+          select nombre from cliente where  ( (edad BETWEEN 10 and 25) or edad >= 50);
+          ```
+        </details> 
+  18. Saca un listado con los comercios de Sevilla y Madrid. No se admiten valores duplicados.
+        <details>
+          <summary>SOLUCIÓN</summary>
+          </br>
+          
+          ```sql
+          select DISTINCT nombre from comercio where ciudad in ('Sevilla', 'Madrid');
+          ```
+
+        </details> 
   19. ¿Qué clientes terminan su nombre en la letra “o”?
       <details>
         <summary>SOLUCIÓN</summary>
