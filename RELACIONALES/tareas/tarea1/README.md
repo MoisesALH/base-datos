@@ -558,6 +558,7 @@ __Se debe de realizar:__
             ```sql
             select * from programa where nombre='Windows';
             ```
+
       </details> 
   14. ¿En qué ciudades comercializa programas El Corte Inglés?
         <details>
@@ -567,6 +568,7 @@ __Se debe de realizar:__
           ```sql
           SELECT * from comercio where nombre ='El Corte Inglés';
           ```
+
       </details> 
   15. ¿Qué otros comercios hay, además de El Corte Inglés? Utilizar el operador IN.
         <details>
@@ -576,7 +578,9 @@ __Se debe de realizar:__
           ```sql
           SELECT * from comercio where nombre not in ('El Corte Inglés');
           ```
-        </details>  
+
+        </details> 
+         
   16. Genera una lista con los códigos de las distintas versiones de Windows y Access. Utilizar el operador IN.
         <details>
           <summary>SOLUCIÓN</summary>
@@ -585,7 +589,9 @@ __Se debe de realizar:__
           ```sql
           select DISTINCT codigo FROM programa where nombre in ('Windows', 'Access');
           ```
+
         </details>  
+
   17. Obtén un listado que incluya los nombres de los clientes de edades comprendidas entre 10 y 25 y de los mayores de 50 años. Da una solución con BETWEEN y otra sin BETWEEN.
         <details>
           <summary>SOLUCIÓN</summary>
@@ -596,7 +602,9 @@ __Se debe de realizar:__
 
           select nombre from cliente where  ( (edad BETWEEN 10 and 25) or edad >= 50);
           ```
+
         </details> 
+
   18. Saca un listado con los comercios de Sevilla y Madrid. No se admiten valores duplicados.
         <details>
           <summary>SOLUCIÓN</summary>
@@ -864,6 +872,7 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        select COUNT(codigo) FROM programa ;
         ```
 
       </details>
@@ -873,6 +882,7 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        SELECT COUNT(dni) FROM cliente WHERE edad > 40 ;
         ```
 
       </details> 
@@ -882,6 +892,7 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        SELECT SUM(cantidad) FROM distribuye WHERE cif = 1;
         ```
 
       </details>  
@@ -891,6 +902,7 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        select avg(cantidad) from distribuye as d,programa as p where  d.codigo = p.codigo and p.codigo = 7 ;
         ```
 
       </details>   
@@ -900,6 +912,9 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        SELECT MIN(cantidad) FROM distribuye,programa
+        WHERE distribuye.codigo = programa.codigo
+        AND programa.codigo = 7 ;
         ```
 
       </details> 
@@ -909,6 +924,9 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        select max(cantidad) from distribuye as d,programa as p
+        where d.codigo = p.codigo
+        and p.codigo = 7 ;
         ```
 
       </details> 
@@ -918,6 +936,9 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        select count (c.cif) from  comercio as c,distribuye as d
+        where d.cif = c.cif
+        and d.codigo = 7 ;
         ```
 
       </details> 
@@ -927,6 +948,8 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        SELECT COUNT(dni) FROM registra 
+        WHERE medio="INTERNET" ;
         ```
 
       </details>  
@@ -936,6 +959,9 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        SELECT SUM(distribuye.cantidad) FROM comercio,distribuye
+        WHERE comercio.cif=distribuye.cif
+        AND comercio.ciudad="SEVILLA" ;
         ```
 
       </details> 
@@ -945,6 +971,10 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        SELECT COUNT(programa.codigo) FROM fabricante, desarrolla, programa
+        WHERE fabricante.id_fab=desarrolla.id_fab
+        AND desarrolla.codigo=programa.codigo
+        AND fabricante.pais="Estados Unidos" ;
         ```
 
       </details> 
@@ -954,6 +984,7 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        SELECT UPPER(nombre), LENGTH(nombre) FROM cliente ;
         ```
 
       </details>  
@@ -963,6 +994,7 @@ __Se debe de realizar:__
         </br>
         
         ```sql
+        SELECT  nombre || version FROM programa ;
         ```
 
       </details> 
