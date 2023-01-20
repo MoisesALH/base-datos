@@ -1,18 +1,18 @@
-ara la realizacoón del ejercicio debemos de crear la siguiente tabla:
+Para la realizacoón del ejercicio debemos de crear la siguiente tabla:
 
-- Usuario 
- - id número,
- - usuario texto;
- - nombre texto;
- - sexo texto;
- - nivel numero,
- - email texto;
- - telefono texto;
- - marca texto;
- - compañia texto;
- - saldo número,
- - activo booleano
- > clave primaria(id)
+- Usuarios 
+    - id número,
+    - usuario texto;
+    - nombre texto;
+    - sexo texto;
+    - nivel numero,
+    - email texto;
+    - telefono texto;
+    - marca texto;
+    - compañia texto;
+    - saldo número,
+    - activo booleano
+    > clave primaria(id)
 
 
 > _Nota_. Para resolver un boolean en sqlite mira la documentación siguiente: https://www.sqlite.org/datatype3.html
