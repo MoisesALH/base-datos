@@ -2,7 +2,7 @@ Para la realizacoón del ejercicio debemos de crear la siguiente tabla:
 
 - Usuarios 
     - id número,
-    - usuario texto;
+    - login texto;
     - nombre texto;
     - sexo texto;
     - nivel numero,
