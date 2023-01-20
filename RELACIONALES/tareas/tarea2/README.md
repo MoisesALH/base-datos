@@ -1,6 +1,6 @@
 Para la realizacoón del ejercicio debemos de crear la siguiente tabla:
 
-- Usuarios 
+- Usuario: 
     - id número,
     - login texto;
     - nombre texto;
