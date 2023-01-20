@@ -43,7 +43,7 @@ INSERT INTO Usuario  VALUES ('20','LUI1076','LUIS','H','3','luis2@live.com','655
 INSERT INTO Usuario  VALUES ('21','HUG5441','HUGO','H','2','hugo@live.com','655-137-3935','MOT','AT&T','500','1');
 ```
 
-> __Nota__. Si existe aLG4una errara en los __insert__, se debe de solventar.
+> __Nota__. Si __existe alguna errata__ en los __insert__, se debe de solventar.
 
 Consultas a realizar:
 
