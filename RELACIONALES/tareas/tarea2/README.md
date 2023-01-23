@@ -1,4 +1,10 @@
-Para la realizacoón del ejercicio debemos de crear la siguiente tabla:
+<div align="justify">
+
+<div align="center">
+<img src="https://www.4webs.es/blog/wp-content/uploads/2016/10/usuarios-nuevos-vs-recurrentes.jpg" width="600px"/>
+</div>
+
+Para la realización del ejercicio debemos de crear la siguiente tabla:
 
 - Usuario: 
     - id número,
@@ -378,3 +384,5 @@ SELECT telefono FROM Usuario WHERE saldo > 300;
 ```
 
 </details>
+
+</div>
