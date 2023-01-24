@@ -21,7 +21,7 @@ Departamento:
  > clave primaria(id)
 
 Se pide realizar:
-1 .Crear la base de datos: BD_EMPLEADO.
+1. Crear la base de datos: BD_EMPLEADO.
 2. Realiza la inserción de, al menos, 10 empleados.
 3. Obtener los apellidos de los empleados.
 4. Obtener los apellidos de los empleados sin repeticiones.
