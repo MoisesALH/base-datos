@@ -183,11 +183,11 @@ Este último registro insertado cumple que el precio tiene entre 3 y 6 dígitos 
 | __+__ | Se corresponde con una o más incidencias. | 
 | __?__ | Se corresponde con cero o una incidencia. | 
 | __.__ | Se corresponde con cualquier carácter del juego de caracteres soportado, excepto NULL. | 
-| __()__ | Expresión de agrupamiento, que se trata como subexpresión única. | 
+| __( )__ | Expresión de agrupamiento, que se trata como subexpresión única. | 
 | __[==]__ | Especifica clases de equivalencia. | 
 | __\n__ | Referencia a expresión anterior. |
 |  __[..]__ | Especifica un elemento de intercalación como, por ejemplo, un elemento de varios caracteres. | 
-| __\d__ | Equivale a un Digito (Carácter Numérico). Equivalente a [[:digit:]]. | 
+| __\d__ | Equivale a un Digito (Carácter Numérico). | 
 | __\D__ | Equivale a un Carácter __NO Numérico__. | 
 | __\w__ | Representa un carácter alfanumérico. Incluye el underscore( _)
 | __\W__ | Representa un Carácter __NO letra__. | 
