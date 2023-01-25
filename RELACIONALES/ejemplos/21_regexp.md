@@ -167,4 +167,33 @@ Se especifican luego del corchete donde definimos los caracteres permitidos. Ver
 ```
 
 Este último registro insertado cumple que el precio tiene entre 3 y 6 dígitos la parte entera.
+
+## Algunos Metacaracteres Útiles:
+
+| Símbolo | Descripción |
+| -------- |  -------- | 
+| __*__ | Se corresponde con cero o más incidencias.|
+| __\|__ | Operador de modificación para especificar correspondencias alternativas. En pocas palabras equivale a ‘o’. Eje: 8|5 = 8 o 5. | 
+| __^/$__ |  ^: representa inicio de línea; $ es fin de línea. | 
+| __[ ]__ | Expresión entre corchetes para una lista de correspondencia que se corresponde con cualquiera de las expresiones representadas en la lista. | 
+| __{m}__ | Se corresponde exactamente m veces. | 
+| __{m,n}__ | Se corresponde al menos m veces, pero no más de n veces. | 
+| __[: :]__ | Especifica una clase de carácter y se corresponde con cualquier carácter de esa clase. | 
+| __\__ |Puede tener 4 significados diferentes: 1. Se representa a sí mismo. 2. Presenta el siguiente carácter. 3. Introduce un operador. 4. No hace nada. | 
+| __+__ | Se corresponde con una o más incidencias. | 
+| __?__ | Se corresponde con cero o una incidencia. | 
+| __.__ | Se corresponde con cualquier carácter del juego de caracteres soportado, excepto NULL. | 
+| __()__ | Expresión de agrupamiento, que se trata como subexpresión única. | 
+| __[==]__ | Especifica clases de equivalencia. | 
+| __\n__ | Referencia a expresión anterior. |
+|  __[..]__ | Especifica un elemento de intercalación como, por ejemplo, un elemento de varios caracteres. | 
+| __\d__ | Equivale a un Digito (Carácter Numérico). Equivalente a [[:digit:]]. | 
+| __\D__ | Equivale a un Carácter __NO Numérico__. | 
+| __\w__ | Representa un carácter alfanumérico. Incluye el underscore( _)
+| __\W__ | Representa un Carácter __NO letra__. | 
+| __\A__ | Equivale al inicio de una cadena de caracteres o el fin de una cadena antes de una nueva línea. | 
+| __\Z__ | Representa el fin de una cadena | 
+| __\s__ | Equivale a un espacio en blanco. | 
+| __\S__ | Equivale a un no espacio en blando. | 
+
 </div>
