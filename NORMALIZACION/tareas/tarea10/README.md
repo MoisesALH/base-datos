@@ -17,7 +17,7 @@
 | Bran Stark | 47588140J | Masculino | Claudia Naranjo | Ingles |
 
 
-Dada la siguiente relación MATRICULA  que contiene información relativa a las matrículas. Se pide:
+Dada la siguiente información relativa a las matrículas de los alumnos de una universidad. Se pide:
 1. Realiza la normalización hasta la 3FN, indicando cada uno de los pasos (1, 2 y 3 FN).
 - 1FN.
 - 2FN.
