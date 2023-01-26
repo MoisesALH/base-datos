@@ -4,7 +4,7 @@
 # Universidad de la Vida
 
 <div align="center">
-<img src="https://images.hola.com/images/026b-12be755bd68c-88fa12421828-1000/horizontal-1200/chicos-de-acceso-a-la-universidad.jpg" width="600px"/>
+<img src="https://okdiario.com/img/2021/12/23/quien-invento-los-grandes-almacenes-655x368.jpg" width="600px"/>
 </div>
 
 </br>
