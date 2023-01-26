@@ -10,7 +10,7 @@
 </br>
 
 | Num_Factura | Fec_Factura | Nom_Cliente | Ref_Cliente | Ciudad_Cliente | Tlf_Cliente | Categoria | Cod_Prod | Descripción | Valor_Unit | Cant_Prod |
-| -----| -----| -----| -----| -----| -----| -----| -----| -----| -----| -----| -----| 
+| -----| -----| -----| -----| -----| -----| -----| -----| -----| -----| -----|
 | 8324 | 13/08/22 | Francisco Martín | 30388889R | | 923-001-233 | Juguetes | 0233122 | Muñeca Barbie | 700 | 1 |  
 | 3456 | 21/06/22 | Martín | 46397020V | | 922-003-111 | Cosméticos| 5133122Z | Pita Labios | 350 | 3 |  
 | 4792 | 12/01/23  | Martín| 46397020V | | 922-003-111 | Embutidos | 1133122Y | Jamánn Serrano | 124 | 4 |  
