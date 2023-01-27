@@ -18,8 +18,6 @@ Dadas las siguientes tablas:
   > clave primaria(id)  
 
 Se pide realizar:
-
-Realiza:
 - La creación de la BBDD_ALMACENES.
 - Inserción de Al menos 20 registros en cada una de las tablas, teniendo en cuenta que:
 	- Ingresar valores de cajas superior e inferior a __150__.
