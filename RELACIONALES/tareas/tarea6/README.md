@@ -9,7 +9,7 @@ Dadas las siguientes tablas :
 Fabricante:
  - clave: texto
  - nombre: texto
- > clave primaria(dni)
+ > clave primaria(clave)
 
 Articulo:
  - clave entero
