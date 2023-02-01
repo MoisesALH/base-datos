@@ -12,8 +12,8 @@ Director:
  - apellido: texto
   
   > clave foranera director_jefe -> dni texto
-  > clave foranera id_despacho: int
-  > clave primaria (dni)
+  clave foranera id_despacho: int
+  clave primaria (dni)
 
 Despacho:
  - id: intero
