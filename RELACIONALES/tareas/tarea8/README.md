@@ -58,5 +58,7 @@ Realiza las siguientes consultas:
 19. Muestra los datos de los alumnos que tienen entre 10 y 20 faltas, son de S/C de Tenerife y están matriculados en 1o de E.S.O.
 20. Muestra los datos de los alumnos cuya fecha de nacimiento comprenda los años 1993 y 1994. Ordena el resultado por nombre.
 
+- Realizar captura de pantalla de cada una de las salidas.
+- Fichero .sql con las consultas
 
 </div>
