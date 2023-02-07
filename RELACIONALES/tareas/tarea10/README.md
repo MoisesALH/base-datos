@@ -1,7 +1,7 @@
 <div>
 
 <div align="center">
-<img src="https://www.captio.net/hs-fs/hubfs/director-comercial.jpg?width=1460&name=director-comercial.jpg" width="600px"/>
+<img src="https://www.autopista.es/uploads/s1/10/49/54/48/encuentra-millones-de-pieza-de-recambio-para-tu-coche-garantizadas-en-internet-de-esta-forma-foto-istock.jpeg" width="600px"/>
 </div>
 
 Dadas las siguientes tablas :
@@ -9,10 +9,12 @@ Dadas las siguientes tablas :
 pieza:
  - id: entero
  - nombre: texto
+
 suministrador:
  - ref_pieza_codigo: entero
  - ref_proveedor: texto
  -  precio: enterio
+
 proveedor:
  - id: texto
  - nombre: texto
