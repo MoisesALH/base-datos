@@ -90,8 +90,10 @@ Realiza las siguientes consultas, indicando, la consulta y la salida que has obt
 
 ## Entrega
 
-Se debe de entregar un fichero _Nombre_Apellido1_Apellido2.sql_ con:
-- Sentencias para la creación de la BBDD.
-- Sentencias para la inserción de los elementos.
-- Sentencias con cada una de las consultas solicitadas.
-- Salida de datos en cada una de las consultas.
+Se debe de entregar:
+ - Un fichero __Nombre_Apellido1_Apellido2.sql__ con:
+   - Sentencias para la creación de la BBDD.
+   - Sentencias para la inserción de los elementos.
+   - Sentencias con cada una de las consultas solicitadas.
+ - Salida de datos en cada una de las consultas.
+ - Fichero __tienda.db__.
