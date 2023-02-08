@@ -70,7 +70,7 @@ Añadiremos una entrada:
 ```sql
 INSERT INTO comments ( name, email, website_url, comment )
 VALUES ( 'Shivam Mamgain', 'xyz@gmail.com',
-'shivammg.blogspot.com', Great tutorial for beginners.' );
+'shivammg.blogspot.com', 'Great tutorial for beginners.' );
 ```
 
 Vamos ahora a mostrar ahora los datos insertados:
