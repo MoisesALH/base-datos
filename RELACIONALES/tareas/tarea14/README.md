@@ -19,6 +19,7 @@ departamento
   - codigo: entero 
   - nombre: texto
   - presupuesto: real
+  - gastos: real
 
 Se pide:
 
