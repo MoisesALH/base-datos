@@ -70,10 +70,10 @@ INSERT INTO pedido VALUES(14, 145.82, '2017-02-02', 6, 1);
 INSERT INTO pedido VALUES(15, 370.85, '2019-03-11', 1, 5);
 INSERT INTO pedido VALUES(16, 2389.23, '2019-03-11', 1, 5);
 ```
-<!--
+
 Almacena el contenido en un fichero y realiza la inserción a través de la sentencia de __sqlite__ que consideres adecuada. Además apollate en las [funciones del lenguaje sql y sqlite](https://www.sqlite.org/lang_corefunc.html). 
 >Nota: Se debe de leer el fichero, utiliza el comando __.help__ para conocer el comando adecuado.
--->
+
 Realiza las siguientes consultas, indicando, la consulta y la salida que has obtenido. Recurda que se debe de entregar:
 - Nombre_Apellido1_Apellido2.sql (Consulta y salida). 
 - ventas.db
