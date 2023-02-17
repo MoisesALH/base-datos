@@ -25,6 +25,7 @@ comercial
 pedido
   - id: entero autoincremental y clave primaria
   - total: real
+  - fecha: texto
   - id_cliente: entero
   - id_comercial: entero  
 
