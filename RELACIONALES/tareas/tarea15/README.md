@@ -230,7 +230,6 @@ SELECT co.* from comercial as co LEFT JOIN pedido as p on p.id_comercial=co.id w
 5. Devuelve un listado con los clientes que no han realizado ningún pedido y de los comerciales que no han participado en ningún pedido. Ordene el listado alfabéticamente por los apellidos y el nombre. En en listado deberá diferenciar de algún modo los clientes y los comerciales.
 
 ```sql
-
 ```
 
 6. ¿Se podrían realizar las consultas anteriores con NATURAL LEFT JOIN o NATURAL RIGHT JOIN? Justifique su respuesta.
