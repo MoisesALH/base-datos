@@ -20,6 +20,10 @@ Departamento:
  - presupuesto: entero
  > clave primaria(id)
 
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
+
 Se pide realizar:
 1. Crear la base de datos: BD_EMPLEADO.
 2. Realiza la inserción de, al menos, 10 empleados.

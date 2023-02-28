@@ -12,6 +12,10 @@ Dada la base de datos para la gestion de una empresa de jardinería, que se encu
 - Realiza la carga de datos a través del fichero ___file/insert_jardineria.sql__.
 - Realiza la verificación que todas las tablas contienen datos a través de las funciones, _.schema_ y un __select * from nombre_tabla__.
 
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
+
 Realiza cada una de las siguientes consultas:
 
 ## Consultas sobre una tabla

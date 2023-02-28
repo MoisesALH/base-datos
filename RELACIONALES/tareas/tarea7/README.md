@@ -20,6 +20,10 @@ Despacho:
   
   > clave primaria (id)
 
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
+
 Se pide:
 
 Realizar las siguientes consultas:

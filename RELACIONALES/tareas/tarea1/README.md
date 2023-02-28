@@ -137,6 +137,10 @@ Se plantea la creación de una BBDD para una empresa de tecnología. Las necesid
   insert into registra values(2,4,15,'Internet');
   ```
 
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
+
 - Realiza las siguientes consultas:
   
   1. Averigua el DNI de todos los clientes. 

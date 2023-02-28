@@ -54,6 +54,10 @@ NULL);
 Almacena el contenido en un fichero y realiza la inserción a través de la sentencia de __sqlite__ que consideres adecuada.
 >Nota: Se debe de leer el fichero, utiliza el comando __.help__ para conocer el comando adecuado.
 
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
+
 Realiza las siguientes consultas, indicando, la consulta y la salida que has obtenido.
 
 ## Consultas sobre una tabla

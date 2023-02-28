@@ -30,6 +30,10 @@ Realiza la inserción de datos teniendo en cuenta los siguientes datos:
 - La empresa con código __RBT__ debe suministrar las piezas con código 4.
 - Se debe de crear al menos 10 piezas y 5 proveedores, asi como la relación entre ellos.
 
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
+
 Realizar las siguientes consultas:
 1. Obtener los nombres de todas las piezas.
 2. Obtener todos los datos de todos los proveedores.

@@ -18,6 +18,10 @@ Articulo:
  > clave primaria(clave)
  > claver foranea(clave_fabricante)
 
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
+
 Se pide realizar:
 1. Realiza la inserción:
 

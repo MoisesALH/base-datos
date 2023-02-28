@@ -20,6 +20,9 @@ Para la realización del ejercicio debemos de trabajar con la siguiente tabla. P
     - activo booleano
     > clave primaria(id)
 
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
 
  Realiza las consultas que se indican a continuación:
 1. Contar el número de usuarios por marca de teléfono.

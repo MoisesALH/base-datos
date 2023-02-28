@@ -17,6 +17,10 @@ Dadas las siguientes tablas:
   - capacidad: entero
   > clave primaria(id)  
 
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
+
 Se pide realizar:
 - La creación de la BBDD_ALMACENES.
 - Inserción de Al menos 20 registros en cada una de las tablas, teniendo en cuenta que:

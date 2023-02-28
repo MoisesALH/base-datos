@@ -26,7 +26,11 @@ Crea la estrucuta de tablas en función de las propiedades y sus nombres para de
 
 Realiza la insercición de almenos 10 científicos, 5 proyectos y la relación entre estos.
 
-Realizar las siguientes consultas:
+___Apollate en las funciones del lenguaje sql y sqlite__:
+- [Funciones de core](https://www.sqlite.org/lang_corefunc.html). 
+- [Funciones de fechas](https://www.sqlite.org/lang_datefunc.html).
+
+Realiza las siguientes consultas:
 1. Sacar una relación completa de los científicos asignados a cada proyecto. Mostrar DNI, Nombre del científico, identificador del proyecto y nombre del proyecto.
 2. Obtener el número de proyectos al que está asignado cada científico (mostrar el DNI y el nombre).
 3. Obtener el numero de científicos asignados a cada proyecto (mostrar el identificador del proyecto y el nombre del proyecto).
