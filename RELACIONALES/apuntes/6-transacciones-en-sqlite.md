@@ -1,5 +1,6 @@
 # Transacciones
 
+
 “__Las transacciones__ son __bloques o secuencias__ de trabajo lógicamente organizados que un DBMS puede ejecutar manual o mecánicamente. Cuando crea, cambia o elimina datos de la tabla, realiza transacciones en la tabla. El control de las transacciones es fundamental para mantener la integridad de los datos y tratar los problemas de la base de datos. En SQLite, una transacción es un grupo de comandos T-SQL ejecutados como un comando T-SQL único. Si se produce un error al ejecutar estos comandos de SQLite, la transacción se revertirá por completo. En general, SQLite está en modo de confirmación automática, lo que significa que cada comando crea automáticamente una transacción, la procesa y confirma los cambios en la base de datos. En este artículo, mostramos cómo se implementa la transacción SQLite para garantizar la integridad y confiabilidad de los datos”.
 
 ## Propiedades de la transacción SQLite
