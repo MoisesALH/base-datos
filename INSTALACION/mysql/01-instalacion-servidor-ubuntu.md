@@ -67,7 +67,7 @@ sudo su
 Una vez que hemos iniciado una sesión como root vamos a iniciar la consola de MySQL también como root sin necesidad de indicarle ningún password (no es necesario usar el modificador -p).
 
 ```sql
-mysql -u root
+mysql -u root 
 ```
 
 Una vez hecho esto ya tendríamos acceso a la consola de MySQL como root.
@@ -151,7 +151,7 @@ En los sistemas Ubuntu con MySQL 5.7 (y versiones posteriores), el usuario root 
 Para usar una contraseña para conectar con MySQL como root, deberá cambiar su método de autenticación de auth_socket a otro complemento, como caching_sha2_password o mysql_native_password. Para hacer esto, abra la consola de MySQL desde su terminal:
 
 ```
-sudo mysql
+sudo mysql -p
 ```
 
 A continuación, compruebe con el siguiente comando el método de autenticación utilizado por una de sus cuentas de usuario de MySQL:
