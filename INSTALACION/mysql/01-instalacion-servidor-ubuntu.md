@@ -7,21 +7,42 @@
 
 ## Introducción
 
-MySQL es un sistema de administración de bases de datos de código abierto, que comúnmente se instala como parte de la popular pila LAMP (Linux, Apache, MySQL, PHP/Python/Perl). Implementa el modelo relacional y utiliza el Structured Query Language (más conocido como SQL) para administrar los datos.
+Un Sistema de Gestión de Bases de Datos Relacionales (SGBDRs) es un programa que nos permite crear, actualizar y administrar una base de datos relacional. La mayoría de los sistemas de gestión de bases de datos relacionales utilizan SQL para acceder a la base de datos.
 
-Este documento explicará cómo instalar MySQL versión 8 en un servidor Ubuntu 20.04. Al completarlo, tendrá una base de datos relacional funcional que puede usar para crear su próximo sitio web o aplicación.
+Hay que tener en cuenta que pueden existir diferencias en la sintaxis SQL utilizada por los distintos SGBDRs.
+
+Los SGBDRs más usados actualmente son:
+
+- SQLite (Hemos trabajado con él).
+- MySQL
+- MariaDB
+- PostgreSQL
+- OracleDB
+- SQL Server
+
+## MySQL
+
+__MySQL__ es un sistema de administración de bases de datos de código abierto, que comúnmente se instala como parte de la popular pila LAMP (Linux, Apache, MySQL, PHP/Python/Perl). Implementa el modelo relacional y utiliza el Structured Query Language (más conocido como SQL) para administrar los datos.
+
+Este apartado se explicará cómo instalar MySQL versión 8 en un servidor Ubuntu 20.04. Al completarlo, tendrá una base de datos relacional funcional que puede usar para crear su próximo sitio web o aplicación.
 
 ### Requisitos previos
 
-Para este documento, necesitará lo siguiente:
+Para este apartado, necesitará lo siguiente:
 
-Un servidor Ubuntu 20.04 con un non-root user administrativo y un firewall configurado con UFW. Para configurarlo, siga nuestra Guía de configuración inicial de servidores para Ubuntu .20.04.
+Un servidor Ubuntu 20.04.
+
+>__Nota__: 
+Vamos a crear una máquina virtual en VirtualBox con la última versión de Ubuntu Server donde vamos a instalar todo el software necesario para realizar nuestras primeras prácticas con el sistema gestor de bases de datos MySQL.
+Ten en cuenta que la tarjeta de red de la máquina virtual tiene que estar configurada en modo adaptador puente.
 
 ### Paso 1: Instalar MySQL
 
-En Ubuntu 20.04, puede instalar MySQL usando el repositorio de paquetes APT. En el momento de escribir este artículo, la versión de MySQL disponible en el repositorio de Ubuntu es la versión 8.0.19.
+En Ubuntu 20.04, puede instalar MySQL usando el repositorio de paquetes APT. 
+Hemos de actualizar la lista de paquetes del repositorio.
 
-Para instalarla, actualice el índice de paquetes en su servidor si no lo ha hecho recientemente.
+Se debe actualizar el índice de paquetes en su servidor si no lo ha hecho recientemente.
+
 ```
 sudo apt update
 ```
@@ -33,6 +54,29 @@ sudo apt install mysql-server
 ```
 
 Estos comandos instalarán MySQL, pero no le solicitará establecer una contraseña ni realizar otros cambios de configuración. Debido a que esto deja su instalación de MySQL sin proteger, abordaremos esto a continuación.
+
+##### ¿Cómo acceder a MySQL Server desde consola con el usuario root?
+
+Una vez que hemos instalado MySQL Server en nuestro sistema vamos a acceder a la consola de MySQL. En primer lugar vamos a iniciar una sesión como root:
+
+```
+sudo su
+```
+
+Una vez que hemos iniciado una sesión como root vamos a iniciar la consola de MySQL también como root sin necesidad de indicarle ningún password (no es necesario usar el modificador -p).
+
+````
+mysql -u root
+````
+
+Una vez hecho esto ya tendríamos acceso a la consola de MySQL como root.
+
+Para salir hemos de ejecutar:
+
+````
+exit;
+````
+
 
 ### Paso 2: Configurar MySQL
 
@@ -129,7 +173,7 @@ En este ejemplo, puede ver que, en efecto, el usuario root se autentica utilizan
 Asegúrese de cambiar password por una contraseña segura de su elección, y tenga en cuenta que este comando cambiará la contraseña root que estableció en el Paso 2:
 
 ```
-ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'password';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'nueva_contraseña';
 ```
 
 >__Nota__: La instrucción ALTER USER previa establecer el root user de MySQL para autenticar con el complemento __caching_sha2_password__. Según la documentación oficial de MySQL, __caching_sha2_password__ es el complemento de autenticación preferido por MySQL, ya que proporciona un cifrado de contraseña más seguro que el anterior, aunque aún usado ampliamente, __mysql_native_password__.
