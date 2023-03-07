@@ -36,6 +36,7 @@ Un servidor Ubuntu 20.04.
 Vamos a crear una máquina virtual en VirtualBox con la última versión de Ubuntu Server donde vamos a instalar todo el software necesario para realizar nuestras primeras prácticas con el sistema gestor de bases de datos MySQL.
 Ten en cuenta que la tarjeta de red de la máquina virtual tiene que estar configurada en modo adaptador puente.
 
+
 ### Paso 1: Instalar MySQL
 
 En Ubuntu 20.04, puede instalar MySQL usando el repositorio de paquetes APT. 
@@ -65,18 +66,17 @@ sudo su
 
 Una vez que hemos iniciado una sesión como root vamos a iniciar la consola de MySQL también como root sin necesidad de indicarle ningún password (no es necesario usar el modificador -p).
 
-````
-mysql -u root
-````
+```sql
+mysql -u root 
+```
 
 Una vez hecho esto ya tendríamos acceso a la consola de MySQL como root.
 
 Para salir hemos de ejecutar:
 
-````
+```sql
 exit;
 ````
-
 
 ### Paso 2: Configurar MySQL
 
@@ -84,6 +84,12 @@ Para nuevas instalaciones de MySQL, querrá ejecutar la secuencia de comandos in
 
 Ejecute la secuencia de comandos de seguridad con sudo:
 
+```sql
+ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mynewpassword';
+```
+
+Enlace de la [solución](https://stackoverflow.com/questions/72135856/endless-loop-in-mysql-secure-installation).
+ 
 ```
 sudo mysql_secure_installation
 ```
@@ -145,7 +151,7 @@ En los sistemas Ubuntu con MySQL 5.7 (y versiones posteriores), el usuario root 
 Para usar una contraseña para conectar con MySQL como root, deberá cambiar su método de autenticación de auth_socket a otro complemento, como caching_sha2_password o mysql_native_password. Para hacer esto, abra la consola de MySQL desde su terminal:
 
 ```
-sudo mysql
+sudo mysql -p
 ```
 
 A continuación, compruebe con el siguiente comando el método de autenticación utilizado por una de sus cuentas de usuario de MySQL:
