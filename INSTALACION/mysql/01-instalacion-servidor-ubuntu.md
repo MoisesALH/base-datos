@@ -91,7 +91,7 @@ Ejecute la secuencia de comandos de seguridad con sudo:
 Enlace de la [solución](https://stackoverflow.com/questions/72135856/endless-loop-in-mysql-secure-installation).
  
 ```
-sudo mysql_secure_installation -p
+sudo mysql_secure_installation
 ```
 
 Esto lo guiará a través de una serie de instrucciones mediante las cuales podrá realizar cambios en las opciones de seguridad de su instalación de MySQL. En la primera solicitud se le preguntará si desea configurar el complemento de validación de contraseña, que puede usar para probar la seguridad de la contraseña de MySQL.
