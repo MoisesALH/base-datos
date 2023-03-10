@@ -10,7 +10,9 @@ __MySQL WorkBench__ es la herramienta oficial para trabajar con MySQL desde una 
 
 ### Instalación de MySQL WorkBench
 
-Descarga e instala la última versión de MySQL WorkBench, siguiendo las instrucciones del siguiente [enlace](https://dev.mysql.com/doc/workbench/en/wb-installing-linux.html).
+Descarga e instala la última versión de MySQL WorkBench, siguiendo las instrucciones del siguiente [enlace](https://downloads.mysql.com/archives/workbench/). Seleccionando la versión del S.O.
+
+
 
 ### Configuración de una nueva conexión
 
