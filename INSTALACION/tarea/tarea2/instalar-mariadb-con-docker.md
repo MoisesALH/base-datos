@@ -53,7 +53,7 @@ Ejemplo de uso del parámetro -v para crear un volumen de tipo bind_mount:
 -v /home/jpexposito/data:/var/lib/mysql
 ```
 
-En este caso el directorio /home/jpexposito/data de nuestra máquina local estará sincronizado con el directorio /var/lib/mysql del contenedor con MySQL Server.
+En este caso el directorio /home/jpexposito/data de nuestra máquina local estará sincronizado con el directorio /var/lib/mysql del contenedor con MariaDB.
 
 Podemos hacer uso de la variable de entorno $PWD para indicar que queremos crear el volumen en nuestro directorio actual.
 
@@ -69,10 +69,10 @@ Ejemplo de uso del parámetro -v con un volumen de tipo volume:
 -v mysql_data:/var/lib/mysql
 ```
 
-El comando que podríamos usar para lanzar nuestro contenedor Docker con MySQL Server con persistencia de datos en un volumen podría ser el siguiente:
+El comando que podríamos usar para lanzar nuestro contenedor Docker con Maria DB con persistencia de datos en un volumen podría ser el siguiente:
 
 ```
-docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -v mariadb_data:/var/lib/mysql mariadb
+docker run -d --rm --name mariabd -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -v mariadb_data:/var/lib/mysql mariadb
 ```
 
 docker run es el comando que nos permite crear un contenedor a partir de una imagen Docker.
@@ -108,7 +108,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 
 ## Cómo conectar con Maria BD
 
-Una vez que MySQL Server está en ejecución podemos conectarnos con cualquier cliente: MySQL Workbench, PHPMyAdmin, Adminer, etc.
+Una vez que MariaBD está en ejecución podemos conectarnos con cualquier cliente: PHPMyAdmin, Adminer, etc.
 
 Los datos de conexión serán:
 
