@@ -1,7 +1,7 @@
 <div align="justify">
 
 <div align="center">
-<img src="https://www.ovhcloud.com/sites/default/files/styles/large_screens_1x/public/2021-09/ECX-1909_Hero_PostgreSQL_600x400%402x.webp" width="500px"/>
+<img src="https://maximorlov.com/images/mysql-phpmyadmin-docker.png?w=1000"/>
 </div>
 
 # Creación de un contenedor Docker con phpMyAdmin
@@ -30,7 +30,7 @@ Los enlaces permiten que los contenedores se descubran entre sí y transfieran d
 Lanza el comando:
 
 ```
-sudo doker ps -a
+sudo docker ps -a
 ```
 
 En función de la salida obtenida dedes de:
