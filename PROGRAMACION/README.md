@@ -1,14 +1,15 @@
+<!-- 
 <div align="justify">
 
 # Triggers, procedimientos y funciones en MySQL
 
 En esta unidad vamos a estudiar los procedimientos, funciones y triggers de MySQL, que son objetos que contienen código SQL y se almacenan asociados a una base de datos.
 
-    Procedimiento almacenado: Es un objeto que se crea con la sentencia CREATE PROCEDURE y se invoca con la sentencia CALL. Un procedimiento puede tener cero o muchos parámetros de entrada y cero o muchos parámetros de salida.
+- __Procedimiento almacenado__: Es un objeto que se crea con la sentencia __CREATE PROCEDURE__ y se invoca con la sentencia __CALL__. Un procedimiento puede tener cero o muchos parámetros de entrada y cero o muchos parámetros de salida.
 
-    Función almacenada: Es un objeto que se crea con la sentencia CREATE FUNCTION y se invoca con la sentencia SELECT o dentro de una expresión. Una función puede tener cero o muchos parámetros de entrada y siempre devuelve un valor, asociado al nombre de la función.
+- __Función almacenada__: Es un objeto que se crea con la sentencia __CREATE FUNCTION__ y se invoca con la sentencia __SELECT__ o dentro de una expresión. Una función puede tener cero o muchos parámetros de entrada y siempre devuelve un valor, asociado al nombre de la función.
 
-    Trigger: Es un objeto que se crea con la sentencia CREATE TRIGGER y tiene que estar asociado a una tabla. Un trigger se activa cuando ocurre un evento de inserción, actualización o borrado, sobre la tabla a la que está asociado.
+- __Trigger__: Es un objeto que se crea con la sentencia __CREATE TRIGGER__ y tiene que estar asociado a una tabla. Un trigger se activa cuando ocurre un evento de inserción, actualización o borrado, sobre la tabla a la que está asociado.
 
 ## Procedimientos
 
@@ -43,12 +44,11 @@ routine_body:
 ```
 
 Nota > Puede encontrar más información en la documentación oficial de MySQL.
-
 ### DELIMITER
 
 Para definir un procedimiento almacenado es necesario modificar temporalmente el carácter separador que se utiliza para delimitar las sentencias SQL.
 
-El carácter separador que se utiliza por defecto en SQL es el punto y coma (;). En los ejemplos que vamos a realizar en esta unidad vamos a utilizar los caracteres $$ para delimitar las instrucciones SQL, pero es posible utilizar cualquier otro carácter.
+El carácter separador que se utiliza por defecto en SQL es el punto y coma __(;)__. En los ejemplos que vamos a realizar en esta unidad vamos a utilizar los caracteres __$$__ para delimitar las instrucciones SQL, __pero es posible utilizar cualquier otro carácter__.
 
 __Ejemplo__:
 
@@ -1013,3 +1013,4 @@ SELECT * FROM alumnos;
 </div>
 
 </div>
+-->
