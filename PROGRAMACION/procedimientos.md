@@ -276,4 +276,250 @@ DELIMITER ; -- comienzo del delimitador
 CALL calcular_max_min_media('Herramientas', @maximo, @minimo, @media);
 SELECT @maximo, @minimo, @media; -- obtenemos los valores de las variables obtenidas
 ```
+## Variables Locales
+
+Dependiendo de la complejidad de un procedimiento almacenado, MySQL nos brinda la posibilidad de definir variables para almacenar valores temporales y efectuar operaciones con los mismos.
+
+Utilizamos la palabra clave ___'declare'___ seguida del nombre de la variable, el tipo de dato que almacena y el valor por defecto que almacena:
+
+```sql
+declare [nombre de la variable] [tipo de dato] default [valor por defecto];
+```
+
+Una variable que no define la sección del 'default' almacena por defecto null.
+
+Un ejemplo de definir una variable:
+
+```sql
+declare total int default 100;
+```
+
+Confeccionemos un procedimiento almacenado que reciba dos enteros, defina una variable local que almacene la suma de dichos valores y seguidamente ejecute el comando select para recuperar el contenido de dicha variable local:
+
+```sql
+drop procedure if exists pa_sumar;
+
+delimiter //
+create procedure pa_sumar(
+  in v1 int,
+  in v2 int)
+begin
+  declare suma int;
+  set suma=v1+v2;
+  select suma;  
+end //
+delimiter ;
+
+call pa_sumar(4,5);
+```
+
+Para modificar una variable utilizamos la palabra clave set:
+
+```sql
+  set suma=v1+v2;
+```
+
+## Sentencia IF
+
+Como cualquier otro lenguaje procedimental el gestor de base de datos MySQL dispone la estructura condicional if para tomar decisiones dentro de un procedimiento almacenado.
+
+La sintaxis de la estructura condicional if simple es:
+
+```sql
+if [condición] then
+   [instrucciones]
+end if;
+```
+
+La sintaxis de la estructura condicional if compuesta es:
+
+```sql
+if [condición] then
+   [instrucciones]
+else
+   [instrucciones]
+end if;
+```
+
+La sintaxis de la estructura condicional if anidada es:
+
+```sql
+if [condición] then
+   [instrucciones]
+elseif [condición] then
+   [instrucciones]
+elseif [condición] then
+   [instrucciones]
+elseif [condición] then
+   [instrucciones]
+......
+else
+   [instrucciones]
+end if;
+```
+
+Confeccionaremos un procedimiento almacenado que muestre el mayor de 2 enteros que le pasamos como parámetro:
+
+```sql
+drop procedure if exists pa_mayor;
+
+delimiter //
+create procedure pa_mayor(
+  in valor1 int,
+  in valor2 int)
+begin
+  if valor1>valor2 then
+    select valor1;
+  else
+    select valor2;
+  end if;
+end //
+delimiter ;
+
+call pa_mayor(20, 400);
+```
+
+Podemos utilizar operadores lógicos en una condición de un if, crearemos un nuevo procedimiento almacenado que muestre el mayor de 3 enteros:
+
+```sql
+drop procedure if exists pa_mayor3;
+
+delimiter //
+create procedure pa_mayor3(
+  in valor1 int,
+  in valor2 int,
+  in valor3 int)
+begin
+  if valor1>valor2 and valor1>valor3 then
+    select valor1;
+  elseif valor2>valor3 then
+    select valor2;
+  else
+    select valor3;
+  end if;
+end //
+delimiter ;
+
+call pa_mayor3(200, 40, 4000);
+```
+
+## Sentencia CASE
+
+Otra estructura condicional disponible en MySQL es la estructura ___'case'___.
+
+Se utiliza cuando hay múltiples condiciones y remplaza a la estructuras ___if/elseif___.
+
+Hay dos variantes con la estructura case. Veamos la primera:
+
+```sql
+case [variable] 
+  when [valor1] then
+    [instrucciones1]
+  when [valor2] then
+    [instrucciones2]
+  when [valor3] then
+    [instrucciones3]
+  ....
+  else
+    [instrucciones]
+end case;
+```
+
+La estructura case simple analiza el contenido de una variable y lo compara con una serie de valores posibles, en caso que coincida con alguno de ellos ejecuta el bloque de instrucciones respectivo. _Dispone de una sección else que se ejecuta cuando la variable analizada no coincide con los valores indicados en los_ ___when___.
+
+## Estructuras Repetitivas (while)
+
+Hemos visto en los conceptos anteriores las instrucciones de MySQL que nos permiten definir estructuras condicionales dentro de los procedimientos almacenados. Ahora veremos que comandos disponemos para repetir bloques de instrucciones.
+
+La primer estructura repetitiva que disponemos y es común a la mayoría de los lenguajes de programación es el 'while'.
+
+while
+La sintaxis es la siguiente:
+
+```sql
+while [condición] do
+  [instrucciones]
+end while;
+```
+
+El ___bloque de instrucciones encerrado entre while y end while se repite mientras la condición se verifique verdadera___.
+
+## Llamar a otro procedimiento desde un procedimiento existente
+
+_Un procedimiento almacenado puede llamar a otro procedimiento almacenado_. El procedimiento que es invocado por otro debe existir cuando creamos el procedimiento que lo llama. Es decir, _si un procedimiento_ ___A___ _llama a otro procedimiento_ ___B___, _B debe existir al crear A_.
+
+Creamos un procedimiento almacenado que reciba 2 números enteros y nos retorne el producto de los mismos:
+
+```sql
+drop procedure if exists pa_multiplicar;
+ 
+delimiter // 
+create procedure pa_multiplicar(
+  in numero1 int,
+  in numero2 int,
+  out producto int)
+begin
+  set producto=numero1*numero2;
+end // 
+delimiter ;
+
+
+call pa_multiplicar(20,3,@resu);
+
+select @resu;
+```
+
+Hasta ahora hemos planteado un procedimiento almacenado y su llamada para ver si su algoritmo genera el resultado deseado.
+
+Ahora crearemos un segundo procedimiento almacenado que nos retorne el factorial de un número que llamará al procedimiento __pa_multiplicar__:
+
+```sql
+drop procedure if exists pa_multiplicar;
+ 
+delimiter // 
+create procedure pa_multiplicar(
+  in numero1 int,
+  in numero2 int,
+  out producto int)
+begin
+  set producto=numero1*numero2;
+end // 
+delimiter ;
+
+
+drop procedure if exists pa_factorial;
+
+delimiter // 
+create procedure pa_factorial(
+  in numero int,
+  out resultado int)
+begin  
+  declare num int;
+  set resultado=1;
+  set num=numero;
+  while num>1 do
+     call pa_multiplicar(resultado,num,resultado);
+     set num=num-1;
+  end while;
+end //    
+delimiter ;
+
+call pa_factorial(5, @resu);
+select @resu;
+```
+
+El procedimiento almacenado ___pa_factorial___ en su algoritmo llama al procedimiento ___pa_multiplicar___.
+
+## Recursividad
+
+En MySQL podemos codificar procedimientos almacenados que se llamen en forma recursiva como ocurre en otros lenguajes de programación.
+
+Es una característica que hay que usar con cuidado ya que puede afectar la eficiencia de nuestros algoritmos. Por defecto MySQL tiene desactiva la posibilidad de hacer llamadas recursivas.
+
+Para activar la posibilidad de hacer llamadas recursivas debemos modificar la variable del sistema ___max_sp_recursion_depth__ indicando la cantidad de llamadas recursivas posibles:
+
+```sql
+SET @@session.max_sp_recursion_depth = 10; 
+```
+
 </div>
