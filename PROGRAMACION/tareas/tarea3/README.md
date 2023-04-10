@@ -3,7 +3,7 @@
 # Donación de Sangre
 
 <div align="center">
-<img src="https://tiposdesangre.org/wp-content/uploads/2017/05/Descubre-los-requisitos-para-Donar-Sangre-768x727.jpg?w=400"/>
+<img width="300" src="https://tiposdesangre.org/wp-content/uploads/2017/05/Descubre-los-requisitos-para-Donar-Sangre-768x727.jpg"/>
 
 </div>
 
@@ -19,8 +19,8 @@ Teniendo en cuenta esta información se pide:
     - [Crear BBDD en MySql](https://dev.mysql.com/doc/refman/8.0/en/creating-database.html).
 - Crea una tabla llamada persona con los siguientes campos:
     - Peso. (Entero)
-    - Admitido. Texto(Si/No).
-    - Sexo. Texto (H/M).
+    - Admitido. Texto(Si/No).__(Valores de dominio:Si/No)__
+    - Sexo. Texto (H/M).__(Valores de dominio:H/M)__
     - Fecha Última Donación. DateTime.
 - Realiza al menos 10 insert en la tabla, con datos aleatorios, generados por el usuario.
 
@@ -31,6 +31,6 @@ Teniendo en cuenta esta información se pide:
 
 ## Referencias
 -[Tipos de Datos en MySql](https://dev.mysql.com/doc/refman/8.0/en/data-types.html).
-
+- [Sentencia Update](https://dev.mysql.com/doc/refman/8.0/en/update.html)
 
 </div>
