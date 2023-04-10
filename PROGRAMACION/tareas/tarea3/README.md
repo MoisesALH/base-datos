@@ -30,7 +30,8 @@ Teniendo en cuenta esta información se pide:
   
 
 ## Referencias
--[Tipos de Datos en MySql](https://dev.mysql.com/doc/refman/8.0/en/data-types.html).
+
+- [Tipos de Datos en MySql](https://dev.mysql.com/doc/refman/8.0/en/data-types.html).
 - [Sentencia Update](https://dev.mysql.com/doc/refman/8.0/en/update.html)
 
 </div>
